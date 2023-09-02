@@ -1,0 +1,148 @@
+﻿@{
+    var urlSegment = Context.Request.Path.Value.Split('/')[2];
+
+    var urlSegments = Context.Request.Path.Value.Split('/');
+    var numberOfSegments = urlSegments.Length;
+    if (urlSegment == "Role" && numberOfSegments == 4)
+    {
+        urlSegment = Context.Request.Path.Value.Split('/')[3];
+    }
+}
+<ul class="navbar-nav bg-brown sidebar sidebar-dark accordion " id="accordionSidebar" >
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center " asp-area="Customer" asp-action="Index" asp-controller="Home">
+        <div class="sidebar-brand-icon">                      
+            <img src="~/images/M.png" alt="" width="50px">                  
+        </div>
+        <div class="sidebar-brand-text mx-3">
+            @if (CultureInfo.CurrentUICulture.Name == "en")
+            {
+                <img src="~/images/morodok_en.png" width="130px" alt="">
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "km")
+            {
+                <img src="~/images/morodok.png" width="130px" alt="">
+            }
+        </div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item  @(urlSegment == "Dashboard" ? "active" : "" )">
+        <a class="nav-link " asp-area="Admin" asp-controller="Dashboard" asp-action="Dashboard">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>@localizer["Dashboard"]</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item @(urlSegment == "MainCategories" ? "active" : "" )">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+           aria-expanded="true" aria-controls="collapseOne">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>@localizer["Category"]</span>
+        </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">@localizer["Category"]:</h6>
+                <a class="collapse-item" asp-area="Admin" asp-action="Index" asp-controller="MainCategories">@localizer["Main Category"]</a>
+                <a class="collapse-item" asp-area="Admin" asp-action="Index" asp-controller="SubCategories">@localizer["Sub Category"]</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item @(urlSegment == "Attribute" ? "active" : "" )">
+        <a class="nav-link" asp-area="Admin" asp-action="Index" asp-controller="Attribute">
+            <i class="fas fa-fw fa-sliders-h"></i>
+            <span>@localizer["Attribute"]</span>
+        </a>
+    </li>
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item @(urlSegment == "Product" ? "active" : "" )">
+        <a class="nav-link collapsed" asp-area="Admin" asp-action="Index" asp-controller="Product">
+            <i class="fa-solid fa-box-open"></i>
+            <span>@localizer["Product"]</span>
+        </a>
+    </li>
+   
+    <li class="nav-item @(urlSegment == "Blogs" ? "active" : "" )">
+        <a class="nav-link" asp-area="Admin" asp-action="Index" asp-controller="Blogs">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <span>@localizer["Blog"]</span>
+        </a>
+    </li>
+    <li class="nav-item @(urlSegment == "Role" ? "active" : "" )">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+           aria-expanded="true" aria-controls="collapseThree">
+            <i class="fas fa-boxes"></i>
+            <span>@localizer["Inventory Manage"]</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">@localizer["Supplier and Purchase"] :</h6>
+                <a class="collapse-item" asp-area="Admin" asp-action="Index" asp-controller="Suppliers">@localizer["Supplier"]</a>
+                <a class="collapse-item" asp-area="Admin" asp-action="Index" asp-controller="Purchases">@localizer["Purchase"]</a>
+
+            </div>
+        </div>
+    </li>
+    <li class="nav-item @(urlSegment == "Role" ? "active" : "" )">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-user-shield"></i>
+            <span>@localizer["Role Setting"]</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">@localizer["Role and User"] :</h6>
+                <a class="collapse-item" asp-area="Admin" asp-action="Index" asp-controller="Role">@localizer["Role"]</a>
+                <a class="collapse-item" asp-area="Customer" asp-action="Index" asp-controller="User">@localizer["User"]</a>
+                <a class="collapse-item" asp-area="Admin" asp-action="UserRole" asp-controller="Role">@localizer["UserRole"]</a>
+               
+            </div>
+        </div>
+    </li>
+    
+    <hr class="sidebar-divider">
+    <li class="nav-item">
+        <a class="nav-link" asp-area="Customer" asp-action="Index" asp-controller="Home">
+            <i class="fas fa-fw fa-user-friends"></i>
+            <span>@localizer["Customer Site"]</span>
+        </a>
+    </li>
+    <li class="nav-item @(urlSegment == "Order" ? "active" : "" )">
+        <a class="nav-link" asp-area="Admin" asp-action="Index" asp-controller="Order">
+            <i class="fas fa-fw fa-shipping-fast"></i>
+            <span>@localizer["Customer's order"]</span>
+        </a>
+    </li>
+    <li class="nav-item @(urlSegment == "Reviews" ? "active" : "" )">
+        <a class="nav-link" asp-area="Admin" asp-action="PendingReviews" asp-controller="Reviews">
+            <i class="fas fa-fw fa-comment"></i>
+            <span>@localizer["User's Review"]</span>
+        </a>
+    </li>
+    <!-- Divider -->
+    
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+    <!-- Sidebar Message -->
+    <div class="sidebar-card d-none d-lg-flex">
+        <img class="sidebar-card-illustration mb-2" src="~/Images/M.png" alt="...">
+        <p class="text-center mb-2"><strong>@localizer["Khmer Cultural Heritage"]</strong> @localizer["pharagrap"] </p>
+    </div>
+
+</ul>

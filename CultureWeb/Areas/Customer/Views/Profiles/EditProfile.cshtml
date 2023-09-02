@@ -1,0 +1,294 @@
+﻿@model CultureWeb.Models.ApplicationUser
+@{
+    ViewData["Title"] = @localizer["Profile"];
+}
+
+@using CultureWeb.Models;
+@using CultureWeb.Utility;
+@using Microsoft.AspNetCore.Http
+@using System.Security.Claims;
+@inject IViewLocalizer localizer
+@inject IHttpContextAccessor HttpContextAccessor
+@inject UserManager<IdentityUser> UserManager
+@{
+    // // Get the user's details
+    var user = await UserManager.GetUserAsync(User) as ApplicationUser;
+}
+@{
+    //var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+    int count = 0;
+    List<Products> products = HttpContextAccessor.HttpContext.Session.Get<List<Products>>("products");
+    if (products == null)
+    {
+        products = new List<Products>();
+    }
+    count = products.Count();
+
+}
+
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f6d365;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
+
+    .upload {
+        width: 200px;
+        position: relative;
+        margin: auto;
+    }
+
+        .upload img {
+            border-radius: 50%;
+            transition: 0.2s ease-in;
+        }
+
+            .upload img:hover {
+                filter: contrast(40%);
+                cursor: pointer;
+            }
+
+        .upload:hover .round {
+            opacity: 1;
+        }
+
+        .upload .round {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            background: #6c6f70;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            overflow: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in;
+        }
+
+            .upload .round input[type = "file"] {
+                position: absolute;
+                transform: scale(2);
+                opacity: 0;
+            }
+
+    input[type=file]::-webkit-file-upload-button {
+        cursor: pointer;
+    }
+
+    .nav-link.active {
+        color: rgb(16, 143, 241);
+    }
+</style>
+<div class="bg-main bg-light">
+    <div class="container">
+       
+        <nav class="navbar navbar-expand-md navbar-dark mb-3">
+            <div class="container-fluid text-start">
+                <div class="col-6">
+                    <a asp-action="Index" asp-controller="Home" class="text-decoration-none text-dark ">@localizer["Home"]</a>
+                    <span><i class="fa-solid fa-chevron-right mx-3"></i></span>
+                    <a asp-action="Profile" asp-controller="Profiles" class="text-decoration-none text-dark ">@localizer["Profile"]</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <i class="fa-solid fa-bars text-dark"></i>
+                </button>
+
+                <div class="col-6 collapse navbar-collapse d-lg-flex d-md-flex justify-content-lg-end justify-content-md-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Cart" title="@localizer["Cart"]">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                (@count)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <a id="login" asp-area="Identity" asp-page="/Account/Login" class="nav-link text-dark" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (0)</a>
+                            }
+                            else
+                            {
+
+                                <a asp-area="Customer" asp-controller="Home" asp-action="FavoriteProduct" class="nav-link text-dark" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (@ViewBag.FavoriteProductCount)</a>
+
+                            }
+                        </li>
+                        <li class="nav-item dropdown ">
+                            @{
+                                var culture = Context.Features.Get<IRequestCultureFeature>();
+                                var cultureList = locOptions.Value.SupportedUICultures.Select(x => new SelectListItem { Value = x.Name, Text = localizer.GetString(x.Name) }).ToList();
+                                var returnUrl = string.IsNullOrWhiteSpace(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
+                            }
+                            <form method="post" asp-area="Customer" asp-action="ChangeLanguage" asp-controller="Home" asp-route-returnUrl="@returnUrl">
+                                <a class="nav-link text-dark" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-language fs-4"></i>
+                                </a>
+                                <ul class="dropdown-menu bg-white shadow animated--grow-in drop-sm-right" aria-labelledby="userDropdown">
+                                    <button class="dropdown-item bg-white border-none text-dark" type="submit" name="culture" value="en">
+                                        <img src="~/images/en.png" class="flag-icon " width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                        @localizer["English"]
+                                    </button>
+                                    <div class="dropdown-divider"></div>
+                                    <button class="dropdown-item bg-white border-none text-dark" type="submit" name="culture" value="km">
+                                        <img src="~/images/km.png" class="flag-icon" width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                        @localizer["Khmer"]
+                                    </button>
+                                    <!-- Add more language options as needed -->
+                                </ul>
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @if (user.Image != null)
+                                    {
+                                        <img src="@($"~/Images/User/{user.Image}")" asp-append-version="true" class="img-profile rounded-circle objit-cover avatar avatar-sm" width="30px" height="30px" style="object-fit:cover;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/Images/user.jpg" class="img-profile rounded-circle avatar avatar-sm" width="30px" height="30px" />
+                                    }
+                                </a>
+                                <ul class="dropdown-menu bg-white shadow animated--grow-in drop-sm-right">
+                                    <li class="dropdown-item">
+                                        <a class="nav-link text-dark" asp-area="Customer" asp-controller="Profiles" asp-action="Profile">
+                                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                            @localizer["Profile"]
+                                        </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+
+                                    <form id="logoutForm" class="form-inline nav-link text-dark" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                        <button id="logout" type="submit" class="dropdown-item bg-white border-none text-dark">
+                                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                            @localizer["Logout"]
+                                        </button>
+                                    </form>
+
+                                </ul>
+
+                            }
+                            else
+                            {
+                                <a class="nav-link " href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="~/Images/user.jpg" class="img-profile rounded-circle avatar avatar-sm" width="30px" height="30px" />
+                                </a>
+                                <ul class="dropdown-menu bg-white  shadow animated--grow-in drop-sm-right" aria-labelledby="userDropdown">
+                                    <li class="dropdown-item-2">
+                                        <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">
+                                            <i class="fa-solid fa-user-plus fa-sm fa-fw mr-2 text-gray-400" style="margin-right: 10px;"></i>
+                                            @localizer["Register"]
+                                        </a>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li class="dropdown-item-2">
+                                        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">
+                                            <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400" style="margin-right: 10px;"></i>
+                                            @localizer["Login"]
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            }
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div >
+            <form asp-action="EditProfile" class="row" method="post" enctype="multipart/form-data">
+                <div class="col-12  d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-column align-items-center text-center p-5 row">
+                        <div class="upload rounded-circle position-relative text-center">
+                            @if (!string.IsNullOrEmpty(Model.Image))
+                            {
+                                <img src="@("~/Images/User/"+Model.Image)" asp-append-version="true" width=200 height=200 alt="Profile" class="rounded-circle object-fit position-relative" style="object-fit: cover; right: 12px;">
+                                <!-- Absolute position for imagePreview -->
+                                <img id="imagePreview" src="#" alt="Image Preview" class="rounded-circle object-fit position-absolute" style="display: none; object-fit: cover; width: 200px; height: 200px; top: 0; left: 0;">
+                            }
+                            else
+                            {
+                                <img src="~/images/user.jpg" asp-append-version="true" width=200 height=200 alt="Profile" class="rounded-circle object-fit position-relative" style="object-fit: cover; right: 12px;">
+                                <!-- Absolute position for imagePreview -->
+                                <img id="imagePreview" src="#" alt="Image Preview" class="rounded-circle object-fit position-absolute" style="display: none; object-fit: cover; width: 200px; height: 200px; top: 0; left: 0;">
+                            }
+                            <div class="round">
+                                <!-- Hidden file input -->
+                                <input asp-for="ImageFile" type="file" asp-accept="image/*" multiple="" data-max_length="20" onchange="displayImagePreview(this)">
+                                <i class="fas fa-camera" style="color: #fff;"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6">
+                            <span class="fw-bold d-flex text-dark mt-3 fs-5​ row">
+                                <input asp-for="FirstName" class="form-control col-12 col-lg-6 col-md-6 mb-2" data-val-required="@localizer["First Name is required."]" placeholder="@localizer["First Name"]" />
+                                <input asp-for="LastName" class="form-control col-12 col-lg-6 col-md-6 mb-2" data-val-required="@localizer["Last Name is required."]" placeholder="@localizer["Last Name"]" />                               
+                                <select asp-for="Gender" class="form-select mb-2" aria-label="Default select example">
+                                    <option selected readonly>Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <input asp-for="Phone" type="number" class="form-control col-12 mb-2"   placeholder="@localizer["Phone number"]"/>
+                                <textarea asp-for="Address" cols="20" rows="5" class="form-control mb-2" placeholder="@localizer["Address"]"></textarea>
+                                <input asp-for="BirthDate" type="date" class="form-control col-12 mb-4" placeholder="@localizer["Birth Of Date"]" />
+                                
+                                <a class="btn btn-dark mb-2" asp-area="Identity" asp-page="/Account/Manage/Email">Change Email</a>
+                                <a class="btn btn-dark" asp-area="Identity" asp-page="/Account/Manage/ChangePassword">Change Password</a>
+                            </span>
+                        </div>
+                       
+                        
+
+                    </div>
+
+
+                </div>
+
+                <div class=" my-3 d-flex justify-content-end">
+                    <div class="pt-options ">
+                        <a asp-action="Profile" class="btn btn-danger mx-2 "> @localizer["Cancel"] </a>
+                        <button type="submit" class="btn btn-dark mx-2 "> @localizer["Update"] </button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Content Row -->
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        function displayImagePreview(input) {
+            const imagePreview = document.getElementById("imagePreview");
+
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = "block";
+                    imagePreview.style.backgroundColor = "white";
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                imagePreview.style.display = "none";
+            }
+        }
+
+    </script>
+}
+

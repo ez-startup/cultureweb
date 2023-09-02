@@ -1,0 +1,193 @@
+﻿@using CultureWeb.Models
+@using CultureWeb.Data
+@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims;
+
+@inject UserManager<IdentityUser> UserManager 
+
+@inject ApplicationDbContext _db
+
+@{
+    DateTime today = DateTime.Today;
+    int orderCount = _db.Orders.Count(order => order.OrderDate.Date == today);
+    List<Order> orders = _db.Orders.Where(order => order.OrderDate.Date == today).ToList();
+}
+@{
+    DateTime Today = DateTime.Today;
+    int contactCount = _db.Contacts.Count(contact => contact.ContactDate.Date == Today);
+    List<Contact> contacts = _db.Contacts.Where(contact => contact.ContactDate.Date == Today).ToList();
+}
+@{
+    // // Get the user's details
+    var user = await UserManager.GetUserAsync(User) as ApplicationUser;
+}
+
+
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars text-brown"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle " href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw "></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-brown" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <!-- order -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">@orderCount+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in "
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header bg-dark">
+                                    @localizer["Today's Orders Alert"]
+                                </h6>
+                               @foreach (var order in orders)
+                                {
+                                    <div>
+
+                                        <a class="dropdown-item d-flex align-items-center" asp-controller="Order" asp-action="Details" asp-route-id="@order.Id">
+                                            <div class="mr-3">
+                                                <div class="icon-circle bg-primary">
+                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="small text-gray-500">@order.OrderDate</div>
+                                                <span class="font-weight-bold">@order.Name , @localizer["order something"]..</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                }
+
+                                <a class="dropdown-item text-center small text-gray-500" asp-controller="Order" asp-action="Index">@localizer["Show All Orders"]</a>
+                            </div>
+                        </li>
+                        <!-- Nav Item - Alerts -->
+                       
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">@contactCount+</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header bg-dark">
+                                    @localizer["Message Center"]
+                                </h6>
+                                @foreach (var contact in contacts)
+                                {
+                                    <a class="dropdown-item d-flex align-items-center" asp-area="Admin" asp-controller="Contact" asp-action="Details" asp-route-id="@contact.Id">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle" src="~/images/avatar.png" />
+                                            <div class="status-indicator bg-success"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate">
+                                               @contact.Message
+                                            </div>
+                                        <div class="small text-gray-500">@contact.Name · @contact.ContactDate
+                                        </div>
+                                        </div>
+                                    </a>
+                                }
+
+                                <a class="dropdown-item text-center small text-gray-500" asp-area="Admin" asp-controller="Contact" asp-action="Index">  @localizer["Read More Messages"]</a>
+                            </div>
+                        </li>
+                        <li class="nav-item​​ no-arrow mx-1 align-midle​​​ align-center mt-3">
+                            @{
+                                var culture = Context.Features.Get<IRequestCultureFeature>();
+                                var cultureList = locOptions.Value.SupportedUICultures.Select(x => new SelectListItem { Value = x.Name, Text = localizer.GetString(x.Name)}).ToList();
+                                var returnUrl = string.IsNullOrWhiteSpace(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
+                            }
+                           
+                            <form method="post" asp-action="ChangeLanguage" asp-controller="Dashboard" asp-route-returnUrl="@returnUrl">
+                                <select class="form-select border-none " name="culture" asp-for="@culture.RequestCulture.UICulture.Name" asp-items="cultureList" onchange="this.form.submit();">
+                                </select>        
+                            </form>                       
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">                          
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">@user.UserName</span>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                                                                                   
+                                    if (user.Image != null )
+                                    {
+                                        <img src="@($"~/Images/User/{user.Image}")" asp-append-version="true" class="img-profile rounded-circle objit-cover" style="object-fit:cover;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/Images/user.jpg" class="img-profile rounded-circle" />
+                                    }
+                                   
+                                }
+
+                            </a>
+
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Dashboard" asp-action="Profile">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    @localizer["Profile"]
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    @localizer["Settings"]
+                                </a>
+                                
+                                <div class="dropdown-divider"></div>
+                                   
+                                 <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                    <button id="logout" type="submit" class="dropdown-item">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                         @localizer["Logout"]
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>

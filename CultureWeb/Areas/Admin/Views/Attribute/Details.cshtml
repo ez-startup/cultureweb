@@ -1,0 +1,77 @@
+﻿@model CultureWeb.Models.Attribute
+@{
+    ViewData["Title"] = @localizer["Attribute Details"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Attribute List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Attribute Details"]</p>
+    </div>
+
+</div>
+
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12  ">
+        <div class="row pt-options  mb-3">
+            <div class="d-flex justify-content-end">
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark mx-3">@localizer["Edit"]</a>
+                <!-- Delete button for each item -->
+                <a class="btn btn-danger delete-btn" asp-action="Delete" asp-route-id="@Model.Id">@localizer["Delete"]</a>
+
+            </div>
+        </div>
+        <div class="bg-white rounded-3 shadow-sm p-3">
+            <div class="d-flex justify-content-center h4 text-dark my-2">@localizer["Attribute Details"]</div>
+            <div class="mt-2">
+                <label class="fw-bolder text-dark" for="">@localizer["Attribute ID"] :</label>
+                <span class="fw-bolder text-black">@Html.DisplayFor(model => model.Id)</span>
+            </div>
+            <div class="mt-2">
+                <label class="fw-bolder text-dark" for="">@localizer["Attribute Name"] :</label>
+                <span class="fw-bolder text-black">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Name)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Name_kh)
+                    }
+                </span>
+            </div>
+             <div class="mt-2">
+                <label class="fw-bolder text-dark" for="">@localizer["Material"] :</label>
+                <span class="fw-bolder text-black">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Meterial)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Meterial_kh)
+                    }
+                </span>
+            </div>
+            <div class="mt-2">
+                <label class="fw-bolder text-dark" for="">@localizer["Description"]</label>
+                <p>
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Description)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Description_kh)
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

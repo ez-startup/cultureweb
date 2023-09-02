@@ -1,0 +1,95 @@
+﻿@using CultureWeb.Models;
+@model IEnumerable<MainCategory>
+@{
+    ViewData["Title"] = @localizer["Main Category"];
+}
+
+<b<h1 class="h5 mb-0 text-danger">@localizer["Main Category"]</h1>
+
+
+<!-- Page Heading -->
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12 px-4 mb-4">
+        <div class="row pt-options mt-4 mb-3  ">
+           @*  <div class="d-flex justify-content-end">
+                <a asp-action="Create" class="btn btn-dark"><i class="fas fa-plus"></i> @localizer[ "Add new Category"]</a>
+            </div> *@
+        </div>
+        <div class=" row bg-light shadow rounded-3 p-0">
+            <table class="table table-responsive-sm table-hover align-middle mb-0 ">
+                <div class="pt-breadcrumb d-flex justify-content-end  px-2">                 
+                    <div class="items-controller  d-flex text-center my-3">
+                        <div>
+                            <span class="fs-7 mx-2">@localizer[ "Show in row"]</span>
+                        </div>
+                        <div>
+                            <select name="" id="itemperpage" class="form-select">
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="08" selected>08</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <thead class="bg-light">
+
+                    <tr>
+                       
+                        <th class="fs-7 text-black">@localizer[ "Main Category Title"]</th>
+                        <th class="fs-7 text-black">@localizer[ "Description"]</th>
+                        <th class="fs-7 text-black">@localizer[ "Action"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class=" bg-white">
+                                                  
+                               
+                                @if (CultureInfo.CurrentUICulture.Name == "en")
+                                {
+                                        <td>
+                                                <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Name)</span>
+                                        </td>
+                                        <td>
+                                                <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Description)</span>
+                                        </td>
+                                }
+                                else if (CultureInfo.CurrentUICulture.Name == "km")
+                                {
+                                        <td>
+                                                <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Name_kh)</span>
+                                        </td>
+                                        <td>
+                                                <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Description_kh)</span>
+                                        </td>
+                                }
+                                <td>
+                                    <span>
+                                        @Html.ActionLink("", "Details" , new { id=item.Id },new {@class="fa-solid fa-circle-info btn btn-brown btn-sm rounded-circle p-2"})
+                                        @* @Html.ActionLink("", "Edit", new { id=item.Id },new {@class="fa-solid fa-pen-to-square btn btn-dark btn-sm rounded-circle p-2"})
+                                        @Html.ActionLink("", "Delete", new { id=item.Id },new {@class="fa-solid fa-solid fa-trash btn btn-danger btn-sm rounded-circle p-2"}) *@
+
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end mt-3 px-2">
+
+                <div class="bottom-field">
+                    <ul class="pagination ">
+                        <li class="prev page-item"><a href="#" id="prev">&#139;</a></li>
+                        <!-- page number here -->
+                        <li class="next"><a href="#" id="next">&#155;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

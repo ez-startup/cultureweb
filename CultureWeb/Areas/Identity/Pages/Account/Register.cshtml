@@ -1,0 +1,157 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = @localizer["Register"];
+}
+
+<style>
+   
+
+    .upload {
+        width: 150px;
+        position: relative;
+        margin: auto;
+    }
+
+        .upload img {
+            border-radius: 50%;
+            transition: 0.2s ease-in;
+        }
+
+            .upload img:hover {
+                filter: contrast(40%);
+                cursor: pointer;
+            }
+
+        .upload:hover .round {
+            opacity: 1;
+        }
+
+        .upload .round {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            background: #6c6f70;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            overflow: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in;
+        }
+
+            .upload .round input[type = "file"] {
+                position: absolute;
+                transform: scale(2);
+                opacity: 0;
+            }
+
+    input[type=file]::-webkit-file-upload-button {
+        cursor: pointer;
+    }
+
+    .nav-link.active {
+        color: rgb(16, 143, 241);
+    }
+</style>
+
+
+<div class="vh-100 d-flex justify-content-center align-items-center p-4">
+    <div class="col-12 col-lg-8 px-5 py-4 m-4 shadow-sm border rounded-3">
+        <div class="d-flex justify-content-center mb-4">
+            <img src="~/Images/LOGO1.png" alt="" width="70px">
+        </div>
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="row" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="col-12 col-md-5 col-lg-4 ">
+                <div class="upload rounded-circle position-relative mb-3 text-center top-0">
+                    <img src="~/images/user.jpg" asp-append-version="true" width=150 height=150 alt="Profile" class="rounded-circle object-fit position-relative" style="object-fit: cover;">
+                    <!-- Absolute position for imagePreview -->
+                    <img id="imagePreview" src="#" alt="Image Preview" class="rounded-circle object-fit position-absolute" style="display: none; object-fit: cover; width: 150px; height: 150px; top: 0; left: 0;">
+
+                    <div class="round">
+                        <!-- Hidden file input -->
+                        <input asp-for="Input.ImageFile" type="file" asp-accept="image/*" multiple="" data-max_length="20" onchange="displayImagePreview(this)">
+                        <i class="fas fa-camera" style="color: #fff;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-8">
+                <div class="row">
+                    <div class="mb-3 col-12 col-md-6 col-lg-6 ">
+                       @*  <label for="" class="form-label">@localizer["First Name"]</label> *@
+                        <input type="text" asp-for="Input.FirstName" class="form-control" autocomplete="given-name" aria-required="true" placeholder="@localizer["First Name"]">
+                        <small>
+                            <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                        </small>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6 col-lg-6">
+                       @*  <label for="" class="form-label">@localizer["Last Name"]</label> *@
+                        <input type="text" asp-for="Input.LastName" class="form-control" autocomplete="family-name" aria-required="true" placeholder="@localizer["Last Name"]">
+                        <small>
+                            <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                        </small>
+                    </div>
+                    <div class="mb-3">
+                      @*   <label for="" class="form-label">@localizer["Email address"]</label> *@
+                        <input type="email" asp-for="Input.Email" class="form-control " autocomplete="username" aria-required="true" placeholder="name@example.com">
+                        <small>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </small>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6 col-lg-6">
+                       @*  <label for="" class="form-label">@localizer["Password"]</label> *@
+                        <input type="password" asp-for="Input.Password" class="form-control " autocomplete="current-password" aria-required="true" placeholder="@localizer["Password"]">
+                        <small>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </small>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6 col-lg-6">
+                       @*  <label for="" class="form-label">@localizer["Confirm Password"]</label> *@
+                        <input type="password" asp-for="Input.ConfirmPassword" class="form-control " autocomplete="current-password" aria-required="true" placeholder="@localizer["Confirm Password"]">
+                        <small>
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                        </small>
+                    </div>
+                </div>
+          
+                <p class="small"><a class="text-primary" id="forgot-password" asp-page="./ForgotPassword">@localizer["Forgot password"]?</a></p>
+                <div class="d-grid text-center d-flex justify-content-center">
+                    <button class="btn btn-brown rounded-5 w-75" id="registerSubmit" type="submit">@localizer["Register"]</button>
+                </div>
+                <div class="mt-3">
+                    <p class="mb-0  text-center">
+                        @localizer["Already have account"]?
+                        <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="text-primary fw-bold">@localizer["Login"] </a>
+                    </p>
+                </div>
+            </div>
+        </form>
+       
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        function displayImagePreview(input) {
+            const imagePreview = document.getElementById("imagePreview");
+
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = "block";
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                imagePreview.style.display = "none";
+            }
+        }
+
+    </script>
+}

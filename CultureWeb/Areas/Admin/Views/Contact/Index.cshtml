@@ -1,0 +1,91 @@
+﻿@model IEnumerable<CultureWeb.Models.Contact>
+
+@{
+    ViewData["Title"] = @localizer["Contact List"];
+}
+
+<b<h1 class="h5 mb-0 text-danger">@localizer["Contact List"]</h1>
+
+
+<!-- Page Heading -->
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12 px-4 mb-4">
+        <div class="row pt-options mt-4 mb-3  ">           
+        </div>
+        <div class=" row bg-light shadow rounded-3 p-0">
+            <table class="table table-responsive-sm table-hover align-middle mb-0 ">
+                <div class="pt-breadcrumb d-flex justify-content-end  px-2">
+
+
+                    <div class="items-controller  d-flex text-center my-3">
+                        <div>
+                            <span class="fs-7 mx-2">@localizer[ "Show in row"]</span>
+                        </div>
+                        <div>
+                            <select name="" id="itemperpage" class="form-select">
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="08" selected>08</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <thead class="bg-light">
+
+                    <tr>
+
+                        <th class="fs-7 text-black">@localizer[ "Name"]</th>
+                        <th class="fs-7 text-black">@localizer[ "Email"]</th>
+                        <th class="fs-7 text-black">@localizer[ "Subject"]</th>
+                        <th class="fs-7 text-black">@localizer[ "Contact Date"]</th>
+                        <th class="fs-7 text-black">@localizer[ "Action"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var item in Model)
+                        {
+                                 
+                            <tr class="bg-white" >
+                                <td>
+                                    <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Name)</span>
+                                </td>
+                                <td>
+                                        <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Email)</span>
+                                </td>
+                                <td>
+                                        <span class="fs-7 ">@Html.DisplayFor(modelItem => item.Subject)</span>
+                                </td>
+                                <td>
+                                        <span class="fs-7 ">@Html.DisplayFor(modelItem => item.ContactDate)</span>
+                                </td>
+                                    <td>
+                                        <span>
+                                        @Html.ActionLink("", "Details" , new { id=item.Id },new {@class="fa-solid fa-circle-info btn btn-brown btn-sm rounded-circle p-2"})
+                                      
+                                        @Html.ActionLink("", "Delete", new { id=item.Id },new {@class="fa-solid fa-solid fa-trash btn btn-danger btn-sm rounded-circle p-2"})
+
+                                        </span>
+                                    </td>
+                            </tr>
+                              
+                        }
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end mt-3 px-2">
+
+                <div class="bottom-field">
+                    <ul class="pagination ">
+                        <li class="prev page-item"><a href="#" id="prev">&#139;</a></li>
+                        <!-- page number here -->
+                        <li class="next"><a href="#" id="next">&#155;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

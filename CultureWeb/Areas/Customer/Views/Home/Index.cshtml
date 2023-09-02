@@ -1,0 +1,412 @@
+﻿@using CultureWeb.Models;
+@using System.Net.Http
+@using CultureWeb.Models;
+@using CultureWeb.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model PaginatedList<CultureWeb.Models.Products>
+
+@{
+    ViewData["Title"] = "Home";
+}
+@{
+    //var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+   int count = 0;
+    List<Products> products = HttpContextAccessor.HttpContext.Session.Get<List<Products>>("products");
+    if (products == null)
+    {
+        products = new List<Products>();
+    }
+    count = products.Count();
+
+}
+
+    <section>
+        <div class="col-12 p-4 header">
+            <div class="row">
+            <div class="d-flex justify-content-center align-items-center ">
+                <img src="~/Images/Culture.png" width="100px" alt="">
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-md bg-brown navbar-dark sticky-top  shadow-sm">
+        <div class="container-fluid text-start">
+            <div class="col-md-1 col-lg-2 px-2">
+                <a class="navbar-brand d-flex flex-column " href="#">
+                    <img src="~/Images/M.png" class="logo" width="35px" class="shadow" alt="">
+                    <img src="~/Images/morodok.png" width="35px" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class=" col-md-11 col-lg-10 collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item mx-2"><a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Dashboard">@localizer["Dashboard"]</a></li>
+                    }
+                    @if (User.IsInRole("SuperUser"))
+                    {
+                        <li class="nav-item mx-2"><a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">@localizer["Super User Dashboard"]</a></li>
+                    }
+                    <li class="nav-item mx-2">
+                    <a class="nav-link active" asp-area="Customer" asp-controller="Home" asp-action="Index">@localizer["Home"]</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="AllProduct">@localizer["Product"]</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">@localizer["Blog"]</a>
+                        <ul class="dropdown-menu bg-brown">                        
+                            <li><a asp-action="Last-Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link">@localizer["Latest Blog"]</a></li>
+                            @foreach (var item in ViewBag.SubBlogs)
+                            {
+                                <li>                                                               
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link" asp-route-id="@item.Id">
+                                            @item.Name
+                                        </a>
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link" asp-route-id="@item.Id">
+                                            @item.Name_kh
+                                        </a>
+                                    }
+                                </li>
+
+                            }
+                        </ul>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="About">@localizer["About"]</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Contact">@localizer["Contact"]</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Cart" title="@localizer["Cart"]">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            (@count)
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">                                            
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                         <a id="login" asp-area="Identity" asp-page="/Account/Login" class="nav-link" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (0)</a>
+                        }
+                        else
+                        {
+
+                            <a asp-area="Customer" asp-controller="Home" asp-action="FavoriteProduct" class="nav-link" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (@ViewBag.FavoriteProductCount)</a>
+
+                        }
+                    </li>
+
+                <li class="nav-item dropdown mx-2">
+                        @{
+                            var culture = Context.Features.Get<IRequestCultureFeature>();
+                            var cultureList = locOptions.Value.SupportedUICultures.Select(x => new SelectListItem { Value = x.Name, Text = localizer.GetString(x.Name) }).ToList();
+                            var returnUrl = string.IsNullOrWhiteSpace(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
+                        }
+                    <form method="post" asp-area="Customer" asp-action="ChangeLanguage" asp-controller="Home" asp-route-returnUrl="@returnUrl">
+                        <a class="nav-link " href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-language fs-4"></i>
+                        </a>
+                        <ul class="dropdown-menu bg-brown shadow animated--grow-in drop-sm-right" aria-labelledby="userDropdown">
+                            <button class="dropdown-item-2 bg-brown border-none text-white" type="submit" name="culture" value="en">
+                                <img src="~/images/en.png" class="flag-icon " width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                    @localizer["English"]
+                            </button>                         
+                            <div class="dropdown-divider"></div>                         
+                            <button class="dropdown-item-2 bg-brown border-none text-white" type="submit" name="culture" value="km">
+                                <img src="~/images/km.png" class="flag-icon" width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                    @localizer["Khmer"]
+                            </button>
+                            <!-- Add more language options as needed -->                                                 
+                        </ul>
+                    </form>
+                </li>
+                    <li class="nav-item dropdown mx-3">
+                        <partial name="_LoginPartial" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <section>
+        <div class="col-12 p-4 vh-35">
+           
+        </div>
+     </section>
+     <section>
+         <div class="col-12 bg-white py-2 px-4">
+            <div class="row">
+                <div class="col-2 mt-2 item text-center ">
+                <a asp-action="Last-Blog" asp-controller="Home" asp-area="Customer" class="nav-link bg-white align-midle"><span><i class="fab fa-blogger fs-4 "></i><p class="">@localizer["Latest"]</p> </span></a>
+                </div>                       
+                <div class="col-10 owl-carousel owl-theme carousel1">
+                    @foreach (var item in ViewBag.SubBlogs)
+                    {
+                    <div class="mt-2 item text-center">
+                        @if (CultureInfo.CurrentUICulture.Name == "en")
+                        {
+                            <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="nav-link p-0" asp-route-id="@item.Id">
+                                @item.Name
+                            </a>
+                        }
+                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                        {
+                            <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="nav-link p-0" asp-route-id="@item.Id">
+                                @item.Name_kh
+                            </a>
+                        }
+                    </div>
+                    }
+                </div>
+             </div>
+         </div>
+     </section>
+      <section>
+    <div class="col-12 p-4 bg-white">
+        <div class="row p-4 bg-white text-light d-flex ">
+            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6  text-center">
+                <div class="image">
+                    <img src="~/Images/poster/religion.jpg" alt="" width="100%">
+                </div>
+            </div>
+            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6 text-dark ">
+                <h2 class="text-brown">@localizer["RELIGION"]</h2>
+                <p class="px-4">
+                    @localizer["religion-desc"]
+                </p>          
+            </div>
+        </div>
+        <div class="row  p-4 bg-white text-light d-flex ">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-dark ">
+                <h2 class="text-brown">@localizer["Angkor wat"]</h2>
+                <p class="px-4">@localizer["angkor-desc"]</p>
+            </div>
+            <div class="col-xs-12  col-sm-12 col-md-12 col-lg-6  text-center">
+                <div class="image">
+                    <img src="~/Images/poster/angkor.jpg" alt="" width="100%">
+                </div>
+
+            </div>
+        </div>
+        <div class="row p-4 bg-white text-light d-flex ">
+            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6  text-center">
+                <div class="image">
+                    <img src="~/Images/poster/bg2.jpg" alt="" width="100%">
+                </div>
+
+            </div>
+            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6 text-dark ">
+                <h2 class="text-brown">@localizer["Lakhon Khol"]</h2>
+                <p class="px-4">@localizer["lkhoun-desc"]</p>
+            
+
+            </div>
+        </div>
+    </div>
+     </section>
+      <section>
+        <div class="col-12 bg-music-big">                
+            <div class="py-4 text-light px-3">
+                <div>
+                    <div class="d-flex justify-content-center mb-3">
+                        <h3 class="fw-bolder text-light">@localizer["Khmer Music Instrument"]</h3>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme carousel2 py-3">
+                    @foreach (var product in Model)
+                     {
+                        <div class="item p-2">
+                           <div class="product-card ​​ shadow-none">
+                                    @if (product.Reviews.Any() && product.Reviews.Average(r => r.Rating) >= 4)
+                                    {
+                                    <div class="badge">@localizer["Top Rated"]</div>
+                                    }
+                                    <div class="product-tumb">
+                                        <a asp-action="Detail" asp-controller="Home" asp-route-id="@product.Id" class="text-decoration-none">
+                                            <img src="~/@product.Image" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-details">
+                                        <span class="product-catagory">
+                                            @switch (CultureInfo.CurrentUICulture.Name)
+                                            {
+                                                case "en":
+                                                    @($"{product.SubCategories.Name}")
+                                                    break;
+                                                case "km":
+                                                    @($"{product.SubCategories.Name_kh}")
+                                                    break;
+                                                default:
+                                                    @($"{product.SubCategories.Name}")
+                                                    break;
+                                            }
+                                        </span>
+                                        <h4>
+                                            <a asp-action="Detail" asp-controller="Home" asp-route-id="@product.Id" class="text-decoration-none">
+                                                @switch (CultureInfo.CurrentUICulture.Name)
+                                                {
+                                                    case "en":
+                                                        @($"{product.Name}")
+                                                        break;
+                                                    case "km":
+                                                        @($"{product.Name_kh}")
+                                                        break;
+                                                    default:
+                                                        @($"{product.Name}")
+                                                        break;
+                                                }
+                                            </a>
+                                        </h4>
+                                        <p class="cha-20">
+                                            @switch (CultureInfo.CurrentUICulture.Name)
+                                            {
+                                                case "en":
+                                                    @($"{product.Description}")
+                                                    break;
+                                                case "km":
+                                                    @($"{product.Description_kh}")
+                                                    break;
+                                                default:
+                                                    @($"{product.Description}")
+                                                    break;
+                                            }
+                                        </p>
+                                        <div class="product-bottom-details">
+                                            <div class="product-price"><small>$00.00</small>$@product.Price</div>
+                                            <div class="product-links">
+                                                <div>
+                                                    @if (!User.Identity.IsAuthenticated)
+                                                    {
+                                                        <a id="login" asp-area="Identity" asp-page="/Account/Login" class=""><i class="fa fa-heart"></i></a>
+                                                    }
+                                                    else
+                                                    {
+                                                        var isProductInFavorites = (List<int>)ViewBag.FavoriteProductIds;
+                                                        if (!isProductInFavorites.Contains(product.Id))
+                                                        {
+                                                            <form asp-action="AddToFavorites" asp-route-productId="@product.Id" method="post">
+                                                                <button type="submit" class="">
+                                                                    <i class="fa fa-heart"></i>
+                                                                </button>
+                                                            </form>
+                                                        }
+                                                        else
+                                                        {
+                                                            <form asp-action="RemoveFromFavorites" asp-route-productId="@product.Id" method="post">
+                                                                <button type="submit" class="border-none bg-none">
+                                                                    <i class="fa fa-heart" style="color: orangered;"></i>
+                                                                </button>
+                                                            </form>
+                                                        }
+                                                    }
+                                                </div>
+                                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                     }              
+                </div>
+                <div>
+                    <div class="d-flex justify-content-center mt-4">
+                    <a asp-area="Customer" asp-controller="Home" asp-action="AllProduct" class="nav-link​​ btn btn-brown-red">@localizer["View more product"]</a>
+                    </div>
+
+                </div>
+            </div> 
+    </div>
+    </section>
+    <section>
+    <div class="col-12 p-4 bg-white">
+            <div class="row p-4 bg-white text-light d-flex ">
+        <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6  d-flex align-items-center px-4">
+            <div class="text-start">
+                    <h3 class="text-dark fw-bolder">@localizer["Khmer Tranditional"]</h3>
+                    <p class="text-dark">@localizer["Khmer Tranditional desc"]</p>        
+            </div>
+        </div>
+        <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6 text-dark p-5 ">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div>
+                            <a href="#">
+                                <img src="~/Images/poster/game.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-end mt-2">
+                            <a href="#">
+                                <img src="~/Images//poster/wedding.webp" alt="" width="95%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="row">
+                        <div class="mt-3">
+                            <a href="#">
+                                <img src="~/Images//poster/respect.jfif" alt="" width="80%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mt-2">
+                            <a href="#">
+                                <img src="~/Images//poster/dance.jfif" alt="" width="85%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </section>
+
+   
+
+<!-- hero section -->
+<!-- alert -->
+<div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="statusModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="status modal-content ">
+            <div class="modal-body d-flex pt-4 align-middle">
+                <div class="mx-2 align-middle">
+                    <i class="fas fa-check-circle fs-3 p-3 bg-success rounded-circle text-white"></i>
+                </div>
+                <div class="px-4 align-middle text-success">
+                    <span class="fw-bold">@localizer["Success"]!</span>
+                    <p class="fs-6">@((TempData["StatusMessage"]?.ToString() != null) ? localizer[TempData["StatusMessage"].ToString()] : "")</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (TempData["StatusMessage"] != null)
+{
+    <script>
+        $(document).ready(function () {
+            $('#statusModal').modal('show');
+            setTimeout(function () {
+                $('#statusModal').modal('hide');
+            }, 3000); // Change the value to the desired number of milliseconds (e.g., 3000 for 3 seconds)
+        });
+    </script>
+}

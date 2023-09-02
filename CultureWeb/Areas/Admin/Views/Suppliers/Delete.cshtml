@@ -1,0 +1,96 @@
+﻿@model CultureWeb.Models.Supplier
+
+@{
+    ViewData["Title"] = @localizer["Supplier Delete"];
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Supplier List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Supplier Delete"]</p>
+    </div>
+</div>
+
+
+<hr />
+<table class="table table-responsive-sm table-hover align-middle mb-0 ">
+    <thead class="bg-light">
+        <tr>
+            
+            <th class="fs-7 text-black">@localizer["Supplier Name"]</th>
+            <th class="fs-7 text-black">@localizer["Position"]</th>
+            <th class="fs-7 text-black">@localizer["Company Name"]</th>
+            <th class="fs-7 text-black">@localizer["Phone"]</th>           
+            <th class="fs-7 text-black">@localizer["Email"]</th>           
+        </tr>
+    </thead>
+    <tbody>
+        <tr class=" bg-white">           
+            @if (CultureInfo.CurrentUICulture.Name == "en")
+            {
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.SupplierName)</span>
+                </td>
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.JobTitle)</span>
+                </td>
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.CompanyName)</span>
+                </td>
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.Phone)</span>
+                </td> 
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.Email)</span>
+                </td>
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "km")
+            {
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.SupplierName_kh)</span>
+                </td>
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.JobTitle_kh)</span>
+                </td>
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.CompanyName_kh)</span>
+                </td>
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.Phone)</span>
+                </td> 
+                <td>
+                    <span class="fs-7 ">@Html.DisplayFor(modelItem => modelItem.Email)</span>
+                </td>
+            }
+           
+        </tr>
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-end mt-3">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">@localizer["Delete"]</button>
+</div>
+
+<!-- Confirm Delete Modal -->
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteModalLabel">@localizer["Confirm Delete"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>@localizer["question"]?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">@localizer["Cancel"]</button>
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="@localizer["Yes"]" class="btn btn-primary" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

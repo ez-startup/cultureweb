@@ -1,0 +1,11 @@
+﻿@page
+@model ConfirmEmailChangeModel
+@{
+    ViewData["Title"] = "Confirm email change";
+}
+
+<h1 text-center>@ViewData["Title"]</h1>
+<partial name="_StatusMessage" model="Model.StatusMessage" />
+<p class="text-center">
+    @localizer["Your email has been confirm change. Please"] <a asp-page="./Login">@localizer["click here to log in"]</a>.
+</p>

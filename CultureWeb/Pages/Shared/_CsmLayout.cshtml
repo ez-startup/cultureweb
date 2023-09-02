@@ -1,0 +1,119 @@
+﻿@*@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager*@
+@using System.Net.Http
+@using CultureWeb.Models;
+@using CultureWeb.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    //var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+    int count = 0;
+    List<Products> products = HttpContextAccessor.HttpContext.Session.Get<List<Products>>("products");
+    if (products == null)
+    {
+        products = new List<Products>();
+    }
+    count = products.Count();
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@localizer["TitleWeb"]</title>
+    <!-- google font -->
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="~/images/logo1.png">
+    <link href="~/fonts/css/all.min.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/jquery/jquery.min.js"></script>
+    @await RenderSectionAsync("Style", required: false)
+
+</head>
+<body class="body-bg overflow-x-hidden" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
+    <!-- header -->
+    <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <section class="">
+        @RenderBody()
+    </section>
+      
+
+
+     
+    <!-- footer -->
+    <section>
+        <div class="col-12 p-4 bg-brown footer">
+
+            <div class="row footer">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                    <img class="mb-3" width="70px" src="~/Images/M.png" alt="logo">
+                    <h4 class="fw-bolder text-white">@localizer["Contact"]</h4>
+                    <div class="my-3">
+                        <p class="my-0 fs-6 text-brown-light"><strong>@localizer["Address"]: </strong>@localizer["Location"]</p>
+                        <p class="my-0 fs-6 text-brown-light"><strong>@localizer["Phone"]: </strong>+855 77 332 977, +855 15 999 010</p>
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6  col-lg-2 d-flex flex-column mb-3">
+                    <h5 class="fw-bolder text-white">@localizer["About"]</h5>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["About Us"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["Delivery Information"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["Privacy Policy"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["Terms & Conditions"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["Contact Us"]</a></span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6  col-lg-2 d-flex flex-column mb-3">
+                    <h5 class="fw-bolder text-white">@localizer["My Account"]</h5>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["Sign In"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["View Cart"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["My Wishlist"]</a></span>
+                    <span class="my-1"> <a class="text-brown-light my-1" href="#">@localizer["Track My Order"]</a></span>
+                    <span class="my-1"><a class="text-brown-light my-1" href="#">@localizer["Help"]</a></span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6  col-lg-4 install mb-3">
+                    <h5 class="fw-bolder text-white">@localizer["Aviable App"]</h5>
+                    <p class="text-brown-light">@localizer["From App Store or Google Play"]</p>
+                    <div class="newletter">
+                        <div class="letter">
+                            <h5 class="fw-bolder text-white">@localizer["Sign Up For Newletters"]</h5>
+                            <p class="text-brown-light">@localizer["Get E-mail"] <span>@localizer["specail offer"]</span>.  </p>
+                        </div>
+                        <div class="form">
+                            <input type="text" class="shadow-lg border-0" placeholder=" @localizer["Your Email"]">
+                            <button class="normal bg-brown-red text-white">@localizer["Sign Up"]</button>
+
+                        </div>
+                    </div>
+                    <div class="follow mt-3">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook i"></i>
+                            <i class="fa-brands fa-twitter i"></i>
+                            <i class="fa-brands fa-instagram i"></i>
+                            <i class="fa-brands fa-tiktok i"></i>
+                            <i class="fa-brands fa-youtube i"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <p class="text-white">© 2023 @localizer["copy"] </p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/fonts/js/all.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/boostrap4.bundle.min.js"></script>
+    <script src="~/js/style.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

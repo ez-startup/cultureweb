@@ -1,0 +1,280 @@
+﻿@model CultureWeb.Models.Products
+
+@{
+    ViewData["Title"] = @localizer["Product details"];
+
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-3">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Product List"] </a> <i class="fa-solid fa-chevron-right"></i> @localizer["Product details"]</p>
+    </div>
+    <div>
+        <!-- Button or link to trigger the modal -->
+        <button type="button" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#assignAttributeModal" asp-route-id="@Model.Id" >@localizer["Assign Attribute"]</button>
+
+    </div>
+</div>
+
+<div id="createAttributeDialog" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@localizer["Create Attribute"]</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form asp-controller="Attribute" asp-action="CreateAtProDetails" method="post">
+                <div class="modal-body">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+                    <div class="form-group">
+                        <label for="Name">@localizer["Attribute Name"]</label>
+                        <input type="text" id="attributeName" name="Name" class="form-control" required/>
+                    </div>
+                     <div class="form-group">
+                        <label for="Name">@localizer["Attribute Name in Khmer"]</label>
+                        <input type="text" id="attributeName_kh" name="Name_kh" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="Meterial">@localizer["Attribute Material"]</label>
+                        <input type="text" id="attributeMaterial" name="Meterial" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="Meterial">@localizer["Attribute Material in Khmer"]</label>
+                        <input type="text" id="attributeMaterial_kh" name="Meterial_kh" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="modal-footer">                 
+                    <button type="submit" class="btn btn-primary">@localizer["Create"]</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Assign Attribute Modal -->
+<div class="modal fade" id="assignAttributeModal" tabindex="-2" role="dialog" aria-labelledby="assignAttributeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal content here -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="assignAttributeModalLabel">@localizer["Assign Attribute"]</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form asp-action="AssignAttribute" method="post" class="modal-body">
+                <input type="hidden" name="ProductId" value="@Model.Id" />
+
+                <div class="form-group">
+                    <div class="d-flex justify-content-between">
+                        <label class="control-label">@localizer["Select Attributes"]</label>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#createAttributeDialog" data-dismiss="modal" aria-label="Close">+@localizer["Add"]</button>
+                    </div>
+                    <hr />
+                    @foreach (var item in ViewBag.AvailableAttributes)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="@item.Id" name="SelectedAttributeId" value="@item.Id">
+                            <label class="form-check-label" for="@item.Id">
+                                @switch (CultureInfo.CurrentUICulture.Name)
+                                {
+                                    case "en":
+                                        @($"{item.Name}: {item.Meterial}")
+                                        break;
+                                    case "km":
+                                        @($"{item.Name_kh}: {item.Meterial_kh}")
+                                        break;
+                                    default:
+                                        @($"{item.Name}: {item.Meterial}")
+                                        break;
+                                }
+                            </label>
+                        </div>
+                    }
+                </div>
+
+                <div class="text-end modal-footer">
+                    <button type="submit" class="btn btn-primary">@localizer["Assign"]</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<form asp-action="" method="post" enctype="multipart/form-data">
+    <div class="p-4 rounded border row">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Name">@localizer["Product Name"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    <input type="hidden" asp-for="Id" />
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Name)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Name_kh)
+                    }                  
+                </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Price">@localizer["Cost Price"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    $@Html.DisplayFor(model => model.PurchaseDetails.FirstOrDefault().CostPrice)
+                </div>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Price">@localizer["Unit Price"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    $@Html.DisplayFor(model => model.Price)
+                </div>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+                <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="ProductColor">@localizer["Product Color"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+               
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.ProductColor)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.ProductColor_kh)
+                    }
+                </div>
+                <span asp-validation-for="ProductColor" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="SubCategoryId">@localizer["SubCategory"] </label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                         @Html.DisplayFor(model => model.SubCategories.Name)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.SubCategories.Name_kh)
+                    }
+                   
+                </div>
+                <span asp-validation-for="SubCategoryId" class="text-danger"></span>
+            </div>
+            
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Qty">@localizer["Quantity"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    @Html.DisplayFor(model => model.Qty)​ 
+                    <a asp-action="Create" asp-controller="Purchases" class="btn btn-sm btn-dark mx-4">@localizer["Purchase more"]</a>
+                    <span asp-validation-for="Qty" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="IsAvailable">@localizer["For Sale"]</label>
+                </div>
+                <div class="col-8">
+                    @if (Model.IsAvailable == false)
+                    {
+                        <span class="text-danger"><i class="fas fa-times-circle"></i></span>
+                    }
+                    else
+                    {
+                        <span class="text-success"><i class="fa-solid fa-circle-check"></i></span>
+                    }
+
+                </div>
+                <span asp-validation-for="IsAvailable" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Description">@localizer["Description"]</label>
+                </div>
+                <div class="col-8 fw-bolder">                                   
+                     @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Description)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Description_kh)
+                    }
+                </div>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+             <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Information">@localizer["Information"]</label>
+                </div>
+                <div class="col-8 fw-bolder">                   
+                    @Html.DisplayFor(model => model.Information)
+                </div>
+                <span asp-validation-for="Information" class="text-danger"></span>
+            </div>
+            <h3 class="fs-5">@localizer["Attribute"] :</h3>
+                <ul>
+                    @foreach (var item in Model.ProductAttributes.Select(ma => ma.Attribute))
+                    {
+                    <li>
+                        @switch (CultureInfo.CurrentUICulture.Name)
+                        {
+                            case "en":
+                                @($"{item.Name}: {item.Meterial}")
+                                break;
+                            case "km":
+                                @($"{item.Name_kh}: {item.Meterial_kh}")
+                                break;
+                            default:
+                                @($"{item.Name}: {item.Meterial}")
+                                break;
+                        }
+                    </li>
+                    }
+                </ul>
+
+          
+            
+        </div>       
+        <div class="col-12 col-md-6 col-lg-4">
+            <img src="~/@Model.Image" width="100%" height="250px" style="border-radius: 5px;border: 1px solid #efefef" class="object-fit" />
+        </div>
+        <div class="form-group d-flex justify-content-end mt-2">
+            <a type="button" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-dark mx-2">@localizer["Edit"]</a>
+            <a type="button" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">@localizer["Delete"]</a>
+               
+            </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Initialize CKEditor
+        CKEDITOR.replace('description');
+    </script>
+}
+

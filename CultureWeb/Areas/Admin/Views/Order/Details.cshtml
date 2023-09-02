@@ -1,0 +1,118 @@
+﻿@model CultureWeb.Models.Order
+
+@{
+    ViewData["Title"] = @localizer["Order Details"];
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4 d-none-print">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Order List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Order Details"]</p>
+    </div>
+    <div>
+        <a asp-action="Invoice" asp-route-id="@Model.Id" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm px-3">
+            <i class="fas fa-download fa-sm text-white-50"></i> @localizer["Preview Report"]
+        </a>
+       
+    </div>
+</div>
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-12 mb-3">
+          
+            <div class="bg-gray rounded-3 pt-4 row">
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Order No"] :<i class="fw-normal">  @Html.DisplayFor(model => model.OrderNo)</i></span>
+                </div>
+
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Customer Name"] :<i class="text-black fw-normal">  @Html.DisplayFor(model => model.Name)</i></span>
+                </div>
+               
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Phone"] :<i class="text-black fw-normal">  @Html.DisplayFor(model => model.PhoneNo)</i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Email"] :<i class="fw-normal">  @Html.DisplayFor(model => model.Email)</i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4 fw-bolder">
+                    <span class="text-black mx-3">@localizer["Address"] :<i class="fw-normal">  @Html.DisplayFor(model => model.Address)</i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Order Date"] :<i class="fw-normal">  @Html.DisplayFor(model => model.OrderDate)</i></span>
+                </div>
+              
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Country/Region"] :<i class="fw-normal"> @localizer["Cambodia"]</i></span>
+                </div>
+                          
+            </div>
+        </div>
+     </div>
+    <div class="row">
+        <div class="col-12">
+            <h5>@localizer["Product Ordered"]</h5>
+        </div>
+        <div class="col-12">
+            
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>@localizer["Product Name"]</th>
+                        <th>@localizer["Price"]</th>
+                        <th>@localizer["Quantity"]</th>
+                        <th>@localizer["SubTotal"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderDetails)
+                    {
+                        <tr>
+                            <td class="d-flex">
+                                <div class="pr-2" style="width: 60px;">
+                                    <img src="~/@item.Product.Image" style="max-height: 60px; max-width: 60px" />
+                                </div>
+                                <div class="col my-auto" style="height: fit-content">
+                                    @switch (CultureInfo.CurrentUICulture.Name)
+                                    {
+                                        case "en":
+                                            @($"{item.Product.Name}")
+                                            break;
+                                        case "km":
+                                            @($"{item.Product.Name_kh}")
+                                            break;
+                                        default:
+                                            @($"{item.Product.Name}")
+                                            break;
+                                    }
+
+                                </div>
+                            </td>
+                            <td style="vertical-align: baseline;">
+                                $@item.Product.Price
+                            </td>
+                            <td style="vertical-align: baseline;">
+                                @item.QtyOrder
+                            </td>
+                            <td style="vertical-align: baseline;">
+                                $@(item.Product.Price * item.QtyOrder)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-12">
+            <div class="col-5"></div>
+            <div class="col-7 col-md-12">
+                <div class="text-end">
+                    <h5>@localizer["Total Amount"] :  <span class="text-success fw-bolder h5"> $@Model.OrderDetails.Sum(c=>c.Product.Price*c.QtyOrder)</span></h5>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

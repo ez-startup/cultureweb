@@ -1,0 +1,105 @@
+﻿@model CultureWeb.Models.Supplier
+@{
+    ViewData["Title"] = @localizer["Supplier Edit"];
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Supplier List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Supplier Edit"]</p>
+    </div>
+</div>
+
+<!-- Content Row -->
+<div class="row d-flex justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8  d-flex justify-content-center ">
+        <form asp-action="Edit" class="row ">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="mt-3 col-lg-6">
+                <label asp-for="SupplierName" class="control-label">@localizer["Supplier Name"]</label>
+                <input asp-for="SupplierName" class="form-control" data-val-required="@localizer["Supplier's Name is required."]" />
+                <span asp-validation-for="SupplierName" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="SupplierName_kh" class="control-label">@localizer["Supplier Khmer Name"]</label>
+                <input asp-for="SupplierName_kh" class="form-control" data-val-required="@localizer["Supplier's Name in Khmer is required."]" />
+                <span asp-validation-for="SupplierName_kh" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="JobTitle" class="control-label">@localizer["Position"]</label>
+                <input asp-for="JobTitle" class="form-control" data-val-required="@localizer["Supplier's Job Title is required."]" />
+                <span asp-validation-for="JobTitle" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="JobTitle_kh" class="control-label">@localizer["Position in Khmer"]</label>
+                <input asp-for="JobTitle_kh" class="form-control" data-val-required="@localizer["Supplier's Job Title in Khmer is required."]" />
+                <span asp-validation-for="JobTitle_kh" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="CompanyName" class="control-label">@localizer["Company Name"]</label>
+                <input asp-for="CompanyName" class="form-control" data-val-required="@localizer["Supplier's Company Name is required."]" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="CompanyName_kh" class="control-label">@localizer["Company Name in Khmer"]</label>
+                <input asp-for="CompanyName_kh" class="form-control" data-val-required="@localizer["Supplier's Company Name in Khmer is required."]" />
+                <span asp-validation-for="CompanyName_kh" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Phone" class="control-label">@localizer["Phone"]</label>
+                <input asp-for="Phone" class="form-control" data-val-required="@localizer["Supplier's Phone is required."]" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Email" class="control-label">@localizer["Email"]</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Country" class="control-label">@localizer["Country"]</label>
+                <input asp-for="Country" class="form-control" data-val-required="@localizer["Supplier's Company Name is required."]" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Country_kh" class="control-label">@localizer["Country in Khmer"]</label>
+                <input asp-for="Country_kh" class="form-control" data-val-required="@localizer["Supplier's Company Name in Khmer is required."]" />
+                <span asp-validation-for="Country_kh" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-12">
+                <label asp-for="Address" class="control-label">@localizer["Address"]</label>
+                <textarea asp-for="Address" cols="20" rows="5" class="form-control "></textarea>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-12">
+                <label asp-for="Address_kh" class="control-label">@localizer["Address in Khmer"]</label>
+                <textarea asp-for="Address_kh" cols="20" rows="5" class="form-control "></textarea>
+                <span asp-validation-for="Address_kh" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-12">
+                <label asp-for="Website" class="control-label">@localizer["Website"]</label>
+                <input asp-for="Website" class="form-control" />
+                <span asp-validation-for="Website" class="text-danger"></span>
+            </div>
+            <div class=" my-3 d-flex justify-content-between">
+                <div class="pt-options ">
+                    <a asp-action="Index" class="btn btn-danger "> @localizer["Back"] </a>
+                </div>
+                <div class="">
+                    <button type="submit" value="Edit" class="btn btn-dark form-control float-sm-end px-4">@localizer["Update"]</button>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

@@ -1,0 +1,82 @@
+﻿@using CultureWeb.Utility;
+@model CultureWeb.Models.Review
+@{
+    ViewData["Title"] = @localizer["Review"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="PendingReviews" class="fs-5 text-danger">@localizer["Pending Reviews"] </a> <i class="fa-solid fa-chevron-right"></i> @localizer["Review"]</p>
+    </div>
+</div>
+<div>
+    <div class="d-flex">
+        <div>
+             @if (!string.IsNullOrEmpty(Model.User.Image))
+            {
+                <img src="@("~/Images/User/"+Model.User.Image)" asp-append-version="true"  class="rounded-circle" width="40px" height="40px" />
+            }
+            else
+            {
+                <img src="~/images/user.jpg" class="rounded-circle" width="40px" height="40px" />
+            }
+           
+            
+        </div>
+
+        <div class="mx-3 d-flex flex-column">
+            <span class="fw-bold" style="font-size: 15px;">
+                @Model.User.LastName @Model.User.FirstName (@Html.DisplayFor(model => model.User.UserName))
+                <span class="mx-3">@for (int i=0; i < Model.Rating; i++)
+                {
+                    <i class='fas fa-star text-danger'></i>
+                }
+                </span>
+            </span>
+            <span class="text-secondary" style="font-size: 13px;"> @Html.DisplayFor(model => model.ReviewDate)</span>
+        </div>
+    </div>  
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @localizer["Product"]
+        </dt>
+        
+        @if (CultureInfo.CurrentUICulture.Name == "en")
+        {
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Product.Name)
+            </dd>
+        }
+        else if (CultureInfo.CurrentUICulture.Name == "km")
+        {
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Product.Name_kh)
+            </dd>
+        }
+        <dt class = "col-sm-2">
+            @localizer["Review Title"]
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReviewTitle)
+        </dd>
+      
+        <dt class = "col-sm-2">
+            @localizer["Review Text"]
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReviewText)
+        </dd>
+      
+       
+    </dl>
+</div>
+<div class="d-flex justify-content-end">
+    <form method="post" asp-controller="Reviews" asp-action="ApproveReview">
+        <input type="hidden" name="reviewId" value="@Model.Id" />
+        <button type="submit" class="btn btn-sm btn-success">@localizer["Approve"]</button>
+    </form>
+    <form method="post" asp-action="RejectReview">
+        <input type="hidden" name="reviewId" value="@Model.Id" />
+        <button type="submit" class="btn btn-sm btn-danger mx-2">@localizer["Reject"]</button>
+    </form>
+</div>

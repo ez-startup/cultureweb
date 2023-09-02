@@ -1,0 +1,48 @@
+﻿@model CultureWeb.Models.SubCategory
+@{
+    ViewData["Title"] = @localizer["Sub Category Delete"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Sub Category"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Sub Category Delete"]</p>
+    </div>
+
+</div>
+
+<form asp-action="Delete" method="post">
+    <div class="p-4 rounded border">
+        <input type="hidden" asp-for="Id" />
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Name">@localizer["Sub Category Title"]: </label>
+            </div>
+          
+            @if (CultureInfo.CurrentUICulture.Name == "en")
+            {
+                 <div class="col-5 fw-bolder">
+                    @Html.DisplayFor(model => model.Name)
+                </div>
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "km")
+            {
+                 <div class="col-5 fw-bolder">
+                    @Html.DisplayFor(model => model.Name_kh)
+                </div>
+            }
+            <div class="col-4">
+                <a asp-action="Index" class="btn btn-dark">@localizer["Cancel"]</a>
+                <input type="submit" class="btn btn-danger" value="@localizer["Delete"]" />
+            </div>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

@@ -1,0 +1,66 @@
+﻿@using CultureWeb.Models;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    // // Get the user's details
+    var user = await UserManager.GetUserAsync(User) as ApplicationUser;
+}
+
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        @if (user.Image != null)
+        {
+        <img src="@($"~/Images/User/{user.Image}")" asp-append-version="true" class="img-profile rounded-circle objit-cover avatar avatar-sm" width="30px" height="30px" style="object-fit:cover;" />
+        }
+        else
+        {
+        <img src="~/Images/user.jpg" class="img-profile rounded-circle avatar avatar-sm" width="30px" height="30px" />
+        }
+    </a>
+    <ul class="dropdown-menu bg-brown shadow animated--grow-in drop-sm-right">
+        <li class="dropdown-item-2">
+            <a class="nav-link text-white" asp-area="Customer" asp-controller="Profiles" asp-action="Profile">
+                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                @localizer["Profile"]
+            </a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="dropdown-item-2">
+            <form id="logoutForm" class="form-inline nav-link text-white" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button id="logout" type="submit" class=" border-none text-white" style="background-color: transparent;">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    @localizer["Logout"]
+                </button>
+            </form>
+        </li>
+    </ul>
+   
+}
+else
+{
+    <a class="nav-link " href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+        <img src="~/Images/user.jpg" class="img-profile rounded-circle avatar avatar-sm" width="30px" height="30px" />
+   
+    </a>
+    <ul class="dropdown-menu bg-brown  shadow animated--grow-in drop-sm-right" aria-labelledby="userDropdown">
+        <li class="dropdown-item-2">
+            <a class="nav-link text-white" id="register" asp-area="Identity" asp-page="/Account/Register">
+                <i class="fa-solid fa-user-plus fa-sm fa-fw mr-2 text-gray-400" style="margin-right: 10px;"></i>
+                @localizer["Register"]
+            </a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="dropdown-item-2">
+            <a class="nav-link text-white" id="login" asp-area="Identity" asp-page="/Account/Login">
+                <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400" style="margin-right: 10px;"></i>
+                @localizer["Login"]
+            </a>
+        </li>
+    </ul>
+    
+}

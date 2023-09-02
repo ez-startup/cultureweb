@@ -1,0 +1,93 @@
+﻿@model CultureWeb.Models.SubCategory
+@{
+    ViewData["Title"] = @localizer["Sub Category Details"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Sub Category"] </a> <i class="fa-solid fa-chevron-right"></i> @localizer["Sub Category Details"]</p>
+    </div>
+</div>
+<form asp-action="" method="post" enctype="multipart/form-data">
+    <div class="p-4 rounded border row">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <div class="col-8">
+            
+            @if (CultureInfo.CurrentUICulture.Name == "en")
+            {
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Name">@localizer["Sub Category Title"]</label>
+                    </div>
+                    <div class="col-8 fw-bolder">
+                        <input type="hidden" asp-for="Id" />
+                        : @Html.DisplayFor(model => model.Name)
+                    </div>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="MainCategoryId">@localizer["Main Category"] </label>
+                    </div>
+                    <div class="col-8 fw-bolder">
+                        : @Html.DisplayFor(model => model.MainCategories.Name)
+                    </div>
+                    <span asp-validation-for="MainCategoryId" class="text-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Description">@localizer["Description"]</label>
+                    </div>
+                    <div class="col-8 fw-bolder">
+
+                        : @Html.DisplayFor(model => model.Description)
+                    </div>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "km")
+            {
+               <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Name">@localizer["Sub Category Title"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    <input type="hidden" asp-for="Id" />
+                    : @Html.DisplayFor(model => model.Name_kh)
+                </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="MainCategoryId">@localizer["Main Category"] </label>
+                </div>
+                <div class="col-8 fw-bolder">
+                    : @Html.DisplayFor(model => model.MainCategories.Name_kh)
+                </div>
+                <span asp-validation-for="MainCategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Description">@localizer["Description"]</label>
+                </div>
+                <div class="col-8 fw-bolder">
+                   
+                   : @Html.DisplayFor(model => model.Description_kh)
+                </div>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            }
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <img src="~/@Model.Image" width="100%" height="250px" style="border-radius: 5px;border: 1px solid #efefef"  class="object-fit"/>
+        </div>
+        <div class="form-group d-flex justify-content-end my-3">
+            <a type="button" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-dark mx-2">@localizer["Edit"]</a>
+            <a type="button" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">@localizer["Delete"]</a>
+
+        </div>
+    </div>
+</form>
+
+
+

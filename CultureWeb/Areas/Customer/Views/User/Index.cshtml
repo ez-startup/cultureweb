@@ -1,0 +1,137 @@
+﻿@using CultureWeb.Models;
+@model IEnumerable<ApplicationUser>
+@{
+    ViewData["Title"] = @localizer["User List"];
+}
+
+
+<h1 class="h5 mb-0 text-danger">@localizer["User List"]</h1>
+
+
+<!-- Page Heading -->
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12 px-4 mb-4">
+        <div class="row pt-options mt-4 mb-3  ">
+            <div class="d-flex justify-content-end">
+                <a asp-action="Create" class="btn btn-dark"><i class="fas fa-plus"></i> @localizer["Add new User"]</a>
+            </div>
+        </div>
+        <div class=" row bg-light shadow rounded-3 p-0">
+            <table class="table table-responsive-sm table-hover align-middle mb-0 ">
+                <div class="pt-breadcrumb d-flex justify-content-between  px-2">
+                    <div class="w-50 input-group  my-3">
+                        <Form action="/User/List" method="get">
+                            <input class=" form-control border-end-0 border rounded-pill " name="search" type="text" placeholder="@localizer["search "]" id="example-search-input">
+                            <span class="input-group-append mx-lg-1">
+                                <button class="btn btn-outline-secondary bg-brown text-white border-start-0 border rounded-pill ms-n3" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </Form>
+                    </div>
+
+                    <div class="items-controller  d-flex text-center my-3">
+                        <div>
+                            <span class="fs-7 mx-2">@localizer["Show in row"]</span>
+                        </div>
+                        <div>
+                            <select name="" id="itemperpage" class="form-select">
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="08" selected>08</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <thead class="bg-light">
+
+                    <tr>
+                       
+                        <th class="fs-7 text-black">@localizer["Full Name"]</th>
+                        <th class="fs-7 text-black">@localizer["User Email"]</th>
+                        <th class="fs-7 text-black ">@localizer["Status"]</th>
+
+                        <th class="fs-7 text-black">@localizer["Action"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class=" bg-white">
+                           
+                            <td>
+                                <span class="fs-7 ">@item.FirstName @item.LastName</span>
+                            </td>
+                            <td class="">
+                                <span class="fs-7  ">@item.UserName</span>
+                            </td>
+                            @if (item.LockoutEnd > DateTime.Now && item.LockoutEnd != null)
+                            {
+                                <td>
+                                    <span class="fs-7  text-danger">@localizer["Inactive"]</span>
+                                </td>
+                                <td>
+                                    <span>
+                                         @Html.ActionLink("", "Details" , new { id=item.Id },new {@class="fa-solid fa-circle-info btn btn-brown btn-sm rounded-circle p-2"})
+                                        @Html.ActionLink("", "Active", new { id=item.Id },new {@class="fas fa-sign-in-alt btn btn-success btn-sm rounded-circle p-2"})
+                                        @Html.ActionLink("", "Delete", new { id=item.Id },new {@class="fa-solid fa-solid fa-trash btn btn-danger btn-sm rounded-circle p-2"})
+
+                                    </span>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <span class="fs-7  text-success">@localizer["Active"]</span>
+                                </td>
+                                <td>
+                                    <span>
+                                        @Html.ActionLink("", "Details" , new { id=item.Id },new {@class="fa-solid fa-circle-info btn btn-brown btn-sm rounded-circle p-2"})
+                                        @Html.ActionLink("", "Edit", new { id=item.Id },new {@class="fa-solid fa-pen-to-square btn btn-dark btn-sm rounded-circle p-2"})
+                                        @Html.ActionLink("", "Locout", new { id=item.Id },new {@class="fas fa-sign-out-alt btn btn-danger btn-sm rounded-circle p-2"})
+
+                                    </span>
+                                </td>
+
+                            }
+                            
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end mt-3 px-2">
+
+                <div class="bottom-field">
+                    <ul class="pagination ">
+                        <li class="prev page-item"><a href="#" id="prev">&#139;</a></li>
+                        <!-- page number here -->
+                        <li class="next"><a href="#" id="next">&#155;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var save = '@TempData["save"]'
+            if (save != '') {
+                alertify.success(save);
+            }
+            var edit = '@TempData["edit"]'
+            if (edit != '') {
+                alertify.success(edit);
+            }
+            var del = '@TempData["delete"]'
+            if (del != '') {
+                alertify.error(del);
+            }
+        })
+    </script>
+}

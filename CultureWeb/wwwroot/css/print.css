@@ -1,0 +1,55 @@
+
+   @page {
+        size: A4;
+        margin: 1px;
+    }
+    #print {
+        display: none;
+        visibility: none;
+    }
+   .p-width {
+       max-width: 2480px;
+       width: 100%;
+   }
+   .A4{
+    height:3508px;
+     width: 2480px; 
+   }
+.d-none-print {
+    display: none!important;
+    visibility: none!important;
+}
+    .container {
+        width: 90%;
+        min-width: 1024px;
+    }
+    .header-print {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .head-left {
+
+    }
+    .head-right {
+
+    }
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0;
+        padding: 0;
+    }
+    .print-only {
+        display: block!important;
+      }
+    html,
+  body {
+    height: 297mm; /* A4 height in millimeters */
+    width: 210mm; /* A4 width in millimeters */
+    margin: 0;
+    padding: 0;
+  }
+}
+

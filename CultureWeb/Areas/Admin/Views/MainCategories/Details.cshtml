@@ -1,0 +1,53 @@
+﻿@model CultureWeb.Models.MainCategory
+@{
+    ViewData["Title"] = @localizer["Category Details"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Main Category"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Category Details"]</p>
+    </div>
+
+</div>
+
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12  ">      
+        <div class="bg-white rounded-3 shadow-sm p-3">
+            <div class="d-flex justify-content-center h4 text-dark my-2">@localizer["Category Details"]</div>
+            <div class="mt-2">
+                <label class="fw-bolder text-dark" for="">@localizer["Category ID"] :</label>
+                <span class="fw-bolder text-black">@Html.DisplayFor(model => model.Id)</span>
+            </div>
+            @if (CultureInfo.CurrentUICulture.Name == "en")
+            {
+                <div class="mt-2">
+                    <label class="fw-bolder text-dark" for="">@localizer["Main Category Title"] :</label>
+                    <span class="fw-bolder text-black">@Html.DisplayFor(model => model.Name)</span>
+                </div>
+                <div class="mt-2">
+                    <label class="fw-bolder text-dark" for="">@localizer["Description"]</label>
+                    <p>@Html.DisplayFor(model => model.Description)</p>
+                </div>
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "km")
+            {
+                <div class="mt-2">
+                    <label class="fw-bolder text-dark" for="">@localizer["Main Category Title"] :</label>
+                    <span class="fw-bolder text-black">@Html.DisplayFor(model => model.Name_kh)</span>
+                </div>
+                <div class="mt-2">
+                    <label class="fw-bolder text-dark" for="">@localizer["Description"]</label>
+                    <p>@Html.DisplayFor(model => model.Description_kh)</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

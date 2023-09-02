@@ -1,0 +1,1184 @@
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.Development.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.staticwebassets.runtime.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.exe
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.deps.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.runtimeconfig.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.pdb
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Core.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Identity.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Humanizer.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.CodeDom.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.AssemblyReference.cache
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.GeneratedMSBuildEditorConfig.editorconfig
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfoInputs.cache
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfo.cs
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CoreCompileInputs.cache
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cs
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cache
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cache
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cs
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.mobileshop.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.build.mobileshop.props
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.mobileshop.props
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.mobileshop.props
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.build.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.development.json
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\bundle\mobileshop.styles.css
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\projectbundle\mobileshop.bundle.scp.css
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CopyComplete
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\refint\mobileshop.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.pdb
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.genruntimeconfig.cache
+E:\Assigment_Asp\New4\mobileshop\mobileshop\obj\Debug\net7.0\ref\mobileshop.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Common.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\JetBrains.Annotations.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.Api.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
+E:\Assigment_Asp\New4\mobileshop\mobileshop\bin\Debug\net7.0\libman.json
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.dll
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\refint\mobileshop.dll
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.pdb
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.Development.json
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.json
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\libman.json
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.staticwebassets.runtime.json
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.exe
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.deps.json
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.runtimeconfig.json
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.pdb
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Core.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Identity.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.Api.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Humanizer.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\JetBrains.Annotations.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Common.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.CodeDom.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Memory.Data.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\asp\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.AssemblyReference.cache
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfoInputs.cache
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfo.cs
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CoreCompileInputs.cache
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cs
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cache
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cache
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cs
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.mobileshop.Microsoft.AspNetCore.StaticWebAssets.props
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.build.mobileshop.props
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.mobileshop.props
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.mobileshop.props
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.pack.json
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.build.json
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.development.json
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\bundle\mobileshop.styles.css
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\projectbundle\mobileshop.bundle.scp.css
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CopyComplete
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.genruntimeconfig.cache
+E:\asp\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\ref\mobileshop.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\libman.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.staticwebassets.runtime.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.exe
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.deps.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.runtimeconfig.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.pdb
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\JetBrains.Annotations.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Common.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Configuration.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Frameworks.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.LibraryModel.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Packaging.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.ProjectModel.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Protocol.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Versioning.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Convention.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Hosting.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Runtime.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.TypedParts.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.AssemblyReference.cache
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfoInputs.cache
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfo.cs
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cache
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cs
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.mobileshop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.build.mobileshop.props
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.mobileshop.props
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.mobileshop.props
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\bundle\mobileshop.styles.css
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\projectbundle\mobileshop.bundle.scp.css
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CopyComplete
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\refint\mobileshop.dll
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.pdb
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.genruntimeconfig.cache
+C:\Users\Windows 10\Downloads\Telegram Desktop\mobileshop\mobileshop\mobileshop\obj\Debug\net7.0\ref\mobileshop.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.Development.json
+D:\mobileshop\mobileshop\bin\Debug\net7.0\libman.json
+D:\mobileshop\mobileshop\bin\Debug\net7.0\appsettings.json
+D:\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.staticwebassets.runtime.json
+D:\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.exe
+D:\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.deps.json
+D:\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.runtimeconfig.json
+D:\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\mobileshop.pdb
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Core.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Azure.Identity.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Grpc.Core.Api.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Humanizer.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\JetBrains.Annotations.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Common.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Configuration.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Frameworks.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.LibraryModel.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Packaging.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.ProjectModel.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Protocol.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\NuGet.Versioning.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.CodeDom.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Convention.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Hosting.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.Runtime.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Composition.TypedParts.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Memory.Data.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\mobileshop\mobileshop\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.AssemblyReference.cache
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.GeneratedMSBuildEditorConfig.editorconfig
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfoInputs.cache
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.AssemblyInfo.cs
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CoreCompileInputs.cache
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cs
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.MvcApplicationPartsAssemblyInfo.cache
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cache
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.RazorAssemblyInfo.cs
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.mobileshop.Microsoft.AspNetCore.StaticWebAssets.props
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.build.mobileshop.props
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.mobileshop.props
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.mobileshop.props
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.pack.json
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.build.json
+D:\mobileshop\mobileshop\obj\Debug\net7.0\staticwebassets.development.json
+D:\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\bundle\mobileshop.styles.css
+D:\mobileshop\mobileshop\obj\Debug\net7.0\scopedcss\projectbundle\mobileshop.bundle.scp.css
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.csproj.CopyComplete
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.dll
+D:\mobileshop\mobileshop\obj\Debug\net7.0\refint\mobileshop.dll
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.pdb
+D:\mobileshop\mobileshop\obj\Debug\net7.0\mobileshop.genruntimeconfig.cache
+D:\mobileshop\mobileshop\obj\Debug\net7.0\ref\mobileshop.dll

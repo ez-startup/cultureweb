@@ -1,0 +1,70 @@
+﻿@model CultureWeb.Models.Attribute
+@{
+    ViewData["Title"] = @localizer["Attribute Create"];
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Attribute List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Attribute Create"]</p>
+    </div>
+</div>
+
+<!-- Content Row -->
+<div class="row d-flex justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6  d-flex justify-content-center ">
+        <form asp-action="Create" class="row ">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" value="0"/>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Name" class="control-label" >@localizer["Attribute Name"]</label>
+                <input asp-for="Name" class="form-control" data-val-required="@localizer["Attribute's Name is required."]"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Name_kh" class="control-label">@localizer["Attribute Khmer Name"]</label>
+                <input asp-for="Name_kh" class="form-control" data-val-required="@localizer["Attribute's Name in Khmer is required."]"/>
+                <span asp-validation-for="Name_kh" class="text-danger" ></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Meterial" class="control-label">@localizer["Material"]</label>
+                <input asp-for="Meterial" class="form-control" data-val-required="@localizer["Attribute's Material is required."]" />
+                <span asp-validation-for="Meterial" class="text-danger" ></span>
+            </div>
+            <div class="mt-3 col-lg-6">
+                <label asp-for="Meterial_kh" class="control-label">@localizer["Material in Khmer"]</label>
+                <input asp-for="Meterial_kh" class="form-control" data-val-required="@localizer["Attribute's Material in Khmer is required."]" />
+                <span asp-validation-for="Meterial_kh" class="text-danger" ></span>
+            </div>
+            <div class="mt-3 col-lg-12">
+                <label asp-for="Description" class="control-label">@localizer["Description"]</label>
+                <textarea asp-for="Description" cols="20" rows="5" class="form-control "></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="mt-3 col-lg-12">
+                <label asp-for="Description_kh" class="control-label">@localizer["Description in Khmer"]</label>
+                <textarea asp-for="Description_kh" cols="20" rows="5" class="form-control "></textarea>
+                <span asp-validation-for="Description_kh" class="text-danger"></span>
+            </div>
+            <div class=" mt-3 d-flex justify-content-between">
+                <div class="pt-options ">
+                    <a asp-action="Index" class="btn btn-danger "> @localizer["Back"] </a>
+                </div>
+                <div class="">
+                    <button type="submit" value="Create" class="btn btn-dark form-control float-sm-end px-4">@localizer["Save"]</button>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

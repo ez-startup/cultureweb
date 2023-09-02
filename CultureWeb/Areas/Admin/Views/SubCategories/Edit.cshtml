@@ -1,0 +1,106 @@
+﻿@model CultureWeb.Models.SubCategory
+
+@{
+    ViewData["Title"] = @localizer["Sub Category​ Edit"];
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Sub Category"] </a> <i class="fa-solid fa-chevron-right"></i> @localizer["Sub Category​ Edit"]</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 d-flex justify-content-center px-lg-5 px-2">
+        <form asp-action="Edit" class="row" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <input type="hidden" name="old_image" value="@Model.Image" />
+            <input type="hidden" asp-for="Id" />
+            <div class="col-lg-6 ">
+                <div class="row">
+                    <div class="mt-3 col-lg-11 ">
+                        <div class="upload__box">
+                            <div class="upload__btn-box">
+                                <label class="upload__btn btn w-100">
+                                    <p>@localizer["Upload images"]</p>
+                                    <i class="fas fa-upload"></i>
+                                    <input asp-for="Image" type="file" asp accept="image/*" multiple="" data-max_length="20" class="upload__inputfile">
+                                </label>
+                                <span asp-validation-for="Image" class="text-danger"></span>
+                            </div>
+                            <div class="upload__img-wrap col-12">
+                                <img src="~/@Model.Image" asp-append-version="true" class="img-fluid" style="width: 180px; border-radius: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="mt-3 col-lg-12">
+                        <label asp-for="Name" class="control-label">@localizer["Sub Category Title"]</label>
+                        <input asp-for="Name" class="form-control" data-val-required="@localizer["Sub Category's Title is required."]" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mt-3 col-lg-12">
+                        <label asp-for="Name_kh" class="control-label">@localizer["Sub Category Title Khmer"]</label>
+                        <input asp-for="Name_kh" class="form-control" data-val-required="@localizer["Sub Category's Title in Khmer is required."]" />
+                        <span asp-validation-for="Name_kh" class="text-danger"></span>
+                    </div>
+
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        <div class="mt-3 col-lg-12">
+                            <label for="MainCategoryId">@localizer["Main Category"]:</label>
+                            <select asp-for="MainCategoryId" asp-items="ViewBag.mainId" class="form-control" data-val-required="@localizer["Main Category is required."]">
+                                <option disabled selected>@localizer["Select Main Category"]</option>
+                            </select>
+                            @*<input asp-for="ProductTypeId" class="form-control"/>*@
+                            <span asp-validation-for="MainCategoryId" class="text-danger"></span>
+                        </div>
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        <div class="mt-3 col-lg-12">
+                            <label for="MainCategoryId">@localizer["Main Category"]:</label>
+                            <select asp-for="MainCategoryId" asp-items="ViewBag.mainId_kh" class="form-control" data-val-required="@localizer["Main Category is required."]">
+                                <option disabled selected>@localizer["Select Main Category"]</option>
+                            </select>
+                            @*<input asp-for="ProductTypeId" class="form-control"/>*@
+                            <span asp-validation-for="MainCategoryId" class="text-danger"></span>
+                        </div>
+                    }
+
+                    <div class="mt-3 col-lg-12">
+                        <label asp-for="Description" class="control-label">@localizer["Description"]</label>
+                        <textarea asp-for="Description" cols="20" rows="5" class="form-control"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="mt-3 col-lg-12">
+                        <label asp-for="Description_kh" class="control-label">@localizer["Description Khmer"]</label>
+                        <textarea asp-for="Description_kh" cols="20" rows="5" class="form-control "></textarea>
+                        <span asp-validation-for="Description_kh" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" my-3 d-flex justify-content-between">
+                <div class="pt-options ">
+                    <a asp-action="Index" class="btn btn-danger mx-2">@localizer["Back"]  </a>
+                </div>
+                <div class="">
+                    <button type="submit" value="Create" class="btn btn-dark form-control float-sm-end px-4">@localizer["Update"]</button>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

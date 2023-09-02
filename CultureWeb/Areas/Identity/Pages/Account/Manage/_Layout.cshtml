@@ -1,0 +1,76 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+    a {
+        color: black !important;
+
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: white !important;
+        background-color: black !important;
+    }
+
+    .btn-check:active + .btn-primary,
+    .btn-check:checked + .btn-primary,
+    .btn-primary.active,
+    .btn-primary:active,
+    .show > .btn-primary.dropdown-toggle,
+    .btn-primary {
+        color: white !important;
+        background-color: black !important;
+        border: none !important;
+    }
+
+    .form-control:focus {
+        border-color: black !important;
+        box-shadow: none !important;
+    }
+
+    .btn-check:focus + .btn, .btn:focus,
+    .btn-close:focus {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    @@media (min-width: 768px) {
+        .custom-border {
+            border-right: 1px solid #c7c8c9;
+        }
+    }
+
+</style>
+@await RenderSectionAsync("Styles", required: false)
+
+<div class="container">
+    @* <h1 class="mt-3">Manage your account</h1> *@
+
+   
+       @*  <h2>Change your account settings</h2> *@
+       @*  <hr /> *@
+     <div class="row">
+        <div class="d-flex justify-content-center">
+           @*  <div class="col-md-6 col-lg-4 custom-border">
+                <partial name="_ManageNav" />
+            </div> *@
+            <div class="col-12">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

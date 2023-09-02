@@ -1,0 +1,139 @@
+﻿@model IEnumerable<CultureWeb.Models.Blog>
+@{
+    ViewData["Title"] = @localizer["Blog List"];
+}
+<h1 class="h5 mb-0 text-danger">@localizer["Blog List"]</h1>
+
+
+<!-- Page Heading -->
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12 px-4 mb-4">
+        <div class="row pt-options mt-4 mb-3  ">
+            <div class="d-flex justify-content-end">
+                <a asp-action="Create" class="btn btn-dark"><i class="fas fa-plus"></i> @localizer["Add new Blog"]</a>
+            </div>
+        </div>
+        <div class=" row bg-light shadow rounded-3 p-0">
+            <table class="table table-responsive-sm table-hover align-middle mb-0 ">
+                <div class="pt-breadcrumb d-flex justify-content-between  px-2">
+                    <div class="w-50 input-group  my-3">
+                        <Form action="/Admin/Blogs/List" method="get">
+                            <input class=" form-control border-end-0 border rounded-pill " name="search" type="text" placeholder="@localizer["search"]" id="example-search-input">
+                            <span class="input-group-append mx-lg-1">
+                                <button class="btn btn-outline-secondary bg-brown text-white border-start-0 border rounded-pill ms-n3" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </Form>
+                    </div>
+
+                    <div class="items-controller  d-flex text-center my-3">
+                        <div>
+                            <span class="fs-7 mx-2">@localizer["Show in row"]</span>
+                        </div>
+                        <div>
+                            <select name="" id="itemperpage" class="form-select">
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="08" selected>08</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <thead class="bg-light">
+
+                    <tr>                    
+                        <th class="fs-7 text-black">@localizer["Poster"]</th>
+                        <th class="fs-7 text-black">@localizer["Blog Title"]</th>
+                        <th class="fs-7 text-black ">@localizer["SubCategory"]</th>                       
+                        <th class="fs-7 text-black">@localizer["Action"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class=" bg-white">
+                            
+                            <td>
+                                <img src="~/@item.Image" asp-append-version="true" alt="" class="img-fluid"
+                                 style="width: 50px; height: 50px; border-radius: 5px; object-fit: cover;">
+                            </td>
+                            <td>
+                                <span class="fs-7 ">
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.Title)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.Title_kh)
+                                    }
+                                </span>
+                            </td>
+                            <td class="">
+                                <span class="fs-7  ">
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.SubCategories.Name)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.SubCategories.Name_kh)
+                                    }
+                                </span>
+                            </td>                        
+                            <td>
+                                <span>
+                                    @Html.ActionLink("", "Details" , new { id=item.Id },new {@class="fa-solid fa-circle-info btn btn-brown btn-sm rounded-circle p-2"})
+                                    @Html.ActionLink("", "Edit", new { id=item.Id },new {@class="fa-solid fa-pen-to-square btn btn-dark btn-sm rounded-circle p-2"})
+                                    @Html.ActionLink("", "Delete", new { id=item.Id },new {@class="fa-solid fa-solid fa-trash btn btn-danger btn-sm rounded-circle p-2"})
+                                </span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end mt-3 px-2">
+
+                <div class="bottom-field">
+                    <ul class="pagination ">
+                        <li class="prev page-item"><a href="#" id="prev">&#139;</a></li>
+                        <!-- page number here -->
+                        <li class="next"><a href="#" id="next">&#155;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="statusModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="status modal-content ">
+            <div class="modal-body d-flex pt-4 align-middle">
+                <div class="mx-2 align-middle">
+                    <i class="fas fa-check-circle fs-3 p-3 bg-success rounded-circle text-white"></i>
+                </div>
+                <div class="px-4 align-middle text-success">
+                    <span class="fw-bold">@localizer["Successfully"]!</span>
+                    <p class="fs-6">@((TempData["StatusMessage"]?.ToString() != null) ? localizer[TempData["StatusMessage"].ToString()] : "")</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (TempData["StatusMessage"] != null)
+{
+    <script>
+        $(document).ready(function () {
+            $('#statusModal').modal('show');
+            setTimeout(function () {
+                $('#statusModal').modal('hide');
+            }, 4000); // Change the value to the desired number of milliseconds (e.g., 3000 for 3 seconds)
+        });
+    </script>
+}

@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = @localizer["Edit Role"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Role List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Edit Role"]</p>
+    </div>
+
+</div>
+<form asp-action="Edit" method="post" id="role-form" enctype="multipart/form-data">
+    <div class="p-4 rounded border">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <h3>@ViewBag.mgs</h3>
+        <div class="form-group row">
+            <div class="col-2">
+                <label>@localizer["Role Name"]</label>
+            </div>
+            <input type="hidden" value="@ViewBag.id" name="id" />
+            <div class="col-5">
+                <input id="name" name="name" required="required" value="@ViewBag.name" class="form-control" />
+            </div>
+            <div class="col-5">
+                <input type="submit" class="btn btn-dark" value="@localizer["Update"]" />
+            </div>
+        </div>    
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function () {
+            $("#user-form").validate({
+                rules: {
+                    UserName: {
+                        required: true,
+                    },
+                    PasswordHash: {
+                        required: true,
+                    }
+                },
+                messages: {
+                    UserName: "Enter your email",
+                    PasswordHash: "Enter your password"
+                }
+
+            });
+        });
+    </script>
+}
+

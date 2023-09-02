@@ -1,0 +1,250 @@
+﻿@using CultureWeb.Models;
+@using CultureWeb.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@*@model CultureWeb.Models.SubCategory*@
+
+@*@using X.PagedList.Mvc;*@
+@using X.PagedList.Mvc.Core;
+@*@model List<Products>*@
+@model PaginatedList<CultureWeb.Models.Blog>
+
+
+@{
+    //var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+    int count = 0;
+    List<Products> products = HttpContextAccessor.HttpContext.Session.Get<List<Products>>("products");
+    if (products == null)
+    {
+        products = new List<Products>();
+    }
+    count = products.Count();
+}
+
+<nav class="navbar navbar-expand-md bg-brown navbar-dark sticky-top  shadow-sm">
+    <div class="container-fluid text-start">
+        <div class="col-md-1 col-lg-2 px-2">
+            <a class="navbar-brand d-flex flex-column " href="#">
+                <img src="~/Images/M.png" class="logo" width="35px" class="shadow" alt="">
+                <img src="~/Images/morodok.png" width="35px" alt="">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" col-md-11 col-lg-10 collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item mx-2"><a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Dashboard">@localizer["Dashboard"]</a></li>
+                }
+                @if (User.IsInRole("SuperUser"))
+                {
+                    <li class="nav-item mx-2"><a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">@localizer["Super User Dashboard"]</a></li>
+                }
+                <li class="nav-item mx-2">
+                    <a class="nav-link " asp-area="Customer" asp-controller="Home" asp-action="Index">@localizer["Home"]</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link " asp-area="Customer" asp-controller="Home" asp-action="AllProduct">@localizer["Product"]</a>
+                </li>
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle active" href="./Blog.cshtml" role="button" data-bs-toggle="dropdown">@localizer["Blog"]</a>
+                    <ul class="dropdown-menu bg-brown">
+                        <li><a asp-action="Last-Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link">@localizer["Latest Blog"]</a></li>
+                        @foreach (var item in ViewBag.SubBlogs)
+                        {
+                            <li>
+                                @if (CultureInfo.CurrentUICulture.Name == "en")
+                                {
+                                    <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link" asp-route-id="@item.Id">
+                                        @item.Name
+                                    </a>
+                                }
+                                else if (CultureInfo.CurrentUICulture.Name == "km")
+                                {
+                                    <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link" asp-route-id="@item.Id">
+                                        @item.Name_kh
+                                    </a>
+                                }
+                            </li>
+
+                        }
+                    </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="About">@localizer["About"]</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Contact">@localizer["Contact"]</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Cart" title="@localizer["Cart"]" >
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        (@count)
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a id="login" asp-area="Identity" asp-page="/Account/Login" class="nav-link" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (0)</a>
+                    }
+                    else
+                    {
+
+                        <a asp-area="Customer" asp-controller="Home" asp-action="FavoriteProduct" class="nav-link" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (@ViewBag.FavoriteProductCount)</a>
+
+                    }
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                    @{
+                        var culture = Context.Features.Get<IRequestCultureFeature>();
+                        var cultureList = locOptions.Value.SupportedUICultures.Select(x => new SelectListItem { Value = x.Name, Text = localizer.GetString(x.Name) }).ToList();
+                        var returnUrl = string.IsNullOrWhiteSpace(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
+                    }
+
+                    <form method="post" asp-area="Customer" asp-action="ChangeLanguage" asp-controller="Home" asp-route-returnUrl="@returnUrl">
+                        <a class="nav-link " href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-language fs-4"></i>
+                        </a>
+                        <ul class="dropdown-menu bg-brown shadow animated--grow-in drop-sm-right" aria-labelledby="userDropdown">
+                            <button class="dropdown-item-2 bg-brown border-none text-white" type="submit" name="culture" value="en">
+                                <img src="~/images/en.png" class="flag-icon " width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                @localizer["English"]
+                            </button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item-2 bg-brown border-none text-white" type="submit" name="culture" value="km">
+                                <img src="~/images/km.png" class="flag-icon" width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                @localizer["Khmer"]
+                            </button>
+                            <!-- Add more language options as needed -->
+                        </ul>
+                    </form>
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <partial name="_LoginPartial" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Display the latest blog -->
+@{
+    var showLatestBlog = true;
+
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentArea = ViewContext.RouteData.Values["area"]?.ToString();
+
+    if (currentAction == "Blog" && currentController == "Home" && currentArea == "Customer")
+    {
+        showLatestBlog = false;
+    }
+}
+
+
+<div class="bg-white min-vh-100">
+    @*<img src="~/@Model.Image" width="100%" height="auto" class="object-fit" />*@
+
+<div class="col-12 p-4 bg-white">
+    <div class="row ">
+        <div class="col-12 p-4 bg-white">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                    <div class="row">
+                        <div class="mt-3">
+
+                            <h4 class="fw-bolder my-4">
+                                <h2 class="text-dark">                                  
+                                        @localizer["Latest Blog"]                                  
+
+                                </h2>
+                            </h4>
+                            <p>                              
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 px-4">
+
+                    <div>
+                        <h4 class="fw-bolder my-4">@localizer["Cambodia's"]</h4>
+                        <div>
+                            <a asp-action="Last-Blog" asp-controller="Home" asp-area="Customer" class="btn btn-outline-danger m-1">@localizer["Latest Blog"]</a>
+                            @foreach (var subblogs in ViewBag.SubBlogs)
+                            {
+                                @if (CultureInfo.CurrentUICulture.Name == "en")
+                                {
+                                    <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="btn btn-outline-danger m-1" asp-route-id="@subblogs.Id">
+                                        @subblogs.Name
+                                    </a>
+                                }
+                                else if (CultureInfo.CurrentUICulture.Name == "km")
+                                {
+                                    <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="btn btn-outline-danger m-1" asp-route-id="@subblogs.Id">
+                                        @subblogs.Name_kh
+                                    </a>
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="sponsor"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 p-4 bg-white">
+    <div class="row">
+        <div class="col-12 bg-white py-2 px-5">        
+                @if (ViewBag.LatestBlog != null)
+                {
+                    <div class="row py-5 bg-white text-light d-flex">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                            <div class="image">
+                                <img src="~/@ViewBag.LatestBlog.Image" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-dark p-lg-4 mt-sm-2">
+                            <h2 class="text-brown">
+                                @if (CultureInfo.CurrentUICulture.Name == "en")
+                                {
+                                    @ViewBag.LatestBlog.Title
+                                }
+                                else if (CultureInfo.CurrentUICulture.Name == "km")
+                                {
+                                    @ViewBag.LatestBlog.Title_kh
+                                }
+                            </h2>
+                            <p class="mx-4">
+
+                                @if (CultureInfo.CurrentUICulture.Name == "en")
+                                {
+                                    @ViewBag.LatestBlog.Description
+                                }
+                                else if (CultureInfo.CurrentUICulture.Name == "km")
+                                {
+                                    @ViewBag.LatestBlog.Description_kh
+                                }
+                            </p>
+                            <div class="text-end px-4">
+                                <a asp-action="Blog-Details" asp-controller="Home" asp-route-id="@ViewBag.LatestBlog.Id" asp-area="Customer" class="btn btn-outline-danger">@localizer["Read more"]</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <p>@localizer["No latest blog available."]</p>
+                }                 
+
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- bottom header -->

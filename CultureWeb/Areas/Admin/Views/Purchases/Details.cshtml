@@ -1,0 +1,181 @@
+﻿@model CultureWeb.Models.Purchase
+
+@{
+    ViewData["Title"] = @localizer["Purchase Details"];
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4 d-none-print">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Purchase List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Purchase Details"]</p>
+    </div>
+    <div>
+        <a asp-action="Invoice" asp-route-id="@Model.Id" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm px-3">
+            <i class="fas fa-download fa-sm text-white-50"></i> @localizer["Preview Report"]
+        </a>
+
+    </div>
+</div>
+
+<div>
+    <div class="d-flex">
+        <div>
+            @if (!string.IsNullOrEmpty(Model.User.Image))
+            {
+                <img src="@("~/Images/User/"+Model.User.Image)" asp-append-version="true" class="rounded-circle object-fit" width="80px" height="80px" />
+            }
+            else
+            {
+                <img src="~/images/user.jpg" class="rounded-circle" width="40px" height="40px" />
+            }
+
+
+        </div>
+
+        <div class="mx-3 d-flex flex-column">
+            <span class="fw-bold" style="font-size: 15px;">
+                @Model.User.LastName @Model.User.FirstName (@Html.DisplayFor(model => model.User.UserName))
+               
+            </span>
+            <span class="text-secondary" style="font-size: 13px;">@localizer["Who made the purchase"]</span>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-12 mb-3">
+
+            <div class="bg-gray rounded-3 pt-4 row">
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Purchase No"] :<i class="fw-normal">  @Html.DisplayFor(model => model.PurchaseNo)</i></span>
+                </div>
+
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Supplier Name"] :<i class="text-black fw-normal">
+                            @if (CultureInfo.CurrentUICulture.Name == "en")
+                            {
+                                @Html.DisplayFor(model => model.Suppliers.SupplierName)
+                            }
+                            else if (CultureInfo.CurrentUICulture.Name == "km")
+                            {
+                                @Html.DisplayFor(model => model.Suppliers.SupplierName_kh)
+                            }
+                        </i>
+                    </span>
+                </div>
+
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Phone"] :<i class="text-black fw-normal">  @Html.DisplayFor(model => model.Suppliers.Phone)</i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Email"] :<i class="fw-normal">  @Html.DisplayFor(model => model.Suppliers.Email)</i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Company Name"] :<i class="fw-normal">  
+                        @if (CultureInfo.CurrentUICulture.Name == "en")
+                        {
+                            @Html.DisplayFor(model => model.Suppliers.CompanyName)
+                        }
+                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                        {
+                            @Html.DisplayFor(model => model.Suppliers.CompanyName_kh)
+                        }​</i></span>
+                </div>
+               
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Purchase Date"] :<i class="fw-normal">  @Html.DisplayFor(model => model.PurchaseDate)</i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4">
+                    <span class="text-black mx-3 fw-bolder">@localizer["Country/Region"] :<i class="fw-normal"> ​ 
+                        @if (CultureInfo.CurrentUICulture.Name == "en")
+                        {
+                            @Html.DisplayFor(model => model.Suppliers.Country)
+                        }
+                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                        {
+                            @Html.DisplayFor(model => model.Suppliers.Country_kh)
+                        }​
+                        </i></span>
+                </div>
+                <div class="d-flex   pb-4 col-lg-4 fw-bolder">
+                    <span class="text-black mx-3">
+                        @localizer["Address"] :<i class="fw-normal">
+                            @if (CultureInfo.CurrentUICulture.Name == "en")
+                            {
+                                @Html.DisplayFor(model => model.Suppliers.Address)
+                            }
+                            else if (CultureInfo.CurrentUICulture.Name == "km")
+                            {
+                                @Html.DisplayFor(model => model.Suppliers.Address_kh)
+                            }
+                        </i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h5>@localizer["Product Purchased"]</h5>
+        </div>
+        <div class="col-12">
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>@localizer["Product Name"]</th>
+                        <th>@localizer["Price"]</th>
+                        <th>@localizer["Quantity"]</th>
+                        <th>@localizer["Sub Total"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.PurchaseDetails)
+                    {
+                        <tr>
+                            <td class="d-flex">
+                                <div class="pr-2" style="width: 60px;">
+                                    <img src="~/@item.Product.Image" style="max-height: 60px; max-width: 60px" />
+                                </div>
+                                <div class="col my-auto" style="height: fit-content">
+                                    @switch (CultureInfo.CurrentUICulture.Name)
+                                    {
+                                        case "en":
+                                            @($"{item.Product.Name}")
+                                            break;
+                                        case "km":
+                                            @($"{item.Product.Name_kh}")
+                                            break;
+                                        default:
+                                            @($"{item.Product.Name}")
+                                            break;
+                                    }
+
+                                </div>
+                            </td>
+                            <td style="vertical-align: baseline;">
+                                $@item.CostPrice
+                            </td>
+                            <td style="vertical-align: baseline;">
+                                @item.QtyPurchase
+                            </td>
+                            <td style="vertical-align: baseline;">
+                                $@(item.CostPrice * item.QtyPurchase)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-12">
+            <div class="col-5"></div>
+            <div class="col-7 col-md-12">
+                <div class="text-end">
+                    <h5>@localizer["Total Amount"] :  <span class="text-success fw-bolder h5"> $@Model.PurchaseDetails.Sum(c=>c.CostPrice*c.QtyPurchase)</span></h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

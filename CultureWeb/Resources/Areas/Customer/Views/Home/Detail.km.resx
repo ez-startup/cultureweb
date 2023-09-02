@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>អំពី</value>
+  </data>
+  <data name="Add to Cart" xml:space="preserve">
+    <value>ដាក់ចូលកន្រ្តក</value>
+  </data>
+  <data name="Add to Favorite" xml:space="preserve">
+    <value>ដាក់ទៅចំណូលចិត្ត</value>
+  </data>
+  <data name="ago" xml:space="preserve">
+    <value>ម៉ោង</value>
+  </data>
+  <data name="All Products" xml:space="preserve">
+    <value>ផលិតផលទាំងអស់</value>
+  </data>
+  <data name="Angkor wat" xml:space="preserve">
+    <value>ប្រាសាទអង្គរវត្ត</value>
+  </data>
+  <data name="angkor-desc" xml:space="preserve">
+    <value>ប្រាសាទអង្គរវត្ត ជាប្រាសាទមួយស្ថិតនៅក្នុងខេត្តសៀមរាប ប្រទេសកម្ពុជា។ សាងសង់ក្នុងសតវត្សទី 12 ដោយអាណាចក្រខ្មែរ វាត្រូវបានចាត់ទុកថាជាស្នាដៃស្ថាបត្យកម្មដ៏គួរឱ្យចាប់អារម្មណ៍បំផុតមួយនៅក្នុងពិភពលោក។ ប្រាសាទនេះលាតសន្ធឹងលើផ្ទៃដីជាង 160 ហិកតា ហើយត្រូវបានតុបតែងដោយចម្លាក់ និងរូបចម្លាក់ដ៏ស្មុគស្មាញ។ ដើមឡើយ​សាងសង់​ជា​ប្រាសាទ​ហិណ្ឌូ ប៉ុន្តែ​ក្រោយមក​បាន​ក្លាយជា​កន្លែង​ពុទ្ធសាសនិក។ សព្វថ្ងៃនេះ ប្រាសាទអង្គរវត្តគឺជាគោលដៅទេសចរណ៍ដ៏ពេញនិយម និងទាក់ទាញភ្ញៀវទេសចរណ៍មកពីជុំវិញពិភពលោកដែលមកទស្សនាភាពស្រស់ស្អាត និងស្វែងយល់ពីបេតិកភណ្ឌវប្បធម៌ដ៏សម្បូរបែបរបស់វា។</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>ធាតុផ្គុំ</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>អត្ថបទ</value>
+  </data>
+  <data name="Cambodia's" xml:space="preserve">
+    <value>របស់កម្ពុជា</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>កន្រ្តក</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>ក្រុម</value>
+  </data>
+  <data name="Check​out​" xml:space="preserve">
+    <value>ពិនិត្យចេញ</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>ពណ៌</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>មតិយោបល់</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>ទំនាក់ទំនង</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>ទាក់ទង​មក​ពួក​យើង</value>
+  </data>
+  <data name="Customer Site" xml:space="preserve">
+    <value>គេហទំព័រអតិថិជន</value>
+  </data>
+  <data name="Customer's order" xml:space="preserve">
+    <value>ការបញ្ជាទិញរបស់អតិថិជន</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>ផ្ទាំងគ្រប់គ្រង</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>ថ្ងៃ</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>ថ្ងៃ</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>ការពិពណ៌នា</value>
+  </data>
+  <data name="Do not have any review yet!" xml:space="preserve">
+    <value>មិនទាន់មានការវាយតម្លៃនៅឡើយទេ!</value>
+  </data>
+  <data name="en" xml:space="preserve">
+    <value>អង់គ្លេស</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>អង់គ្លេស</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>ចំណូលចិត្ត</value>
+  </data>
+  <data name="FavoriteAdd" xml:space="preserve">
+    <value>ផលិតផលត្រូវបានបញ្ចូលទៅក្នុងចំណូលចិត្ត</value>
+  </data>
+  <data name="FavoriteRemove" xml:space="preserve">
+    <value>ផលិតផលត្រូវបានដកចេញពីចំណូលចិត្ត</value>
+  </data>
+  <data name="Filter by Category" xml:space="preserve">
+    <value>ស្វែងរកតាមក្រុម</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>វិចិត្រសាល</value>
+  </data>
+  <data name="Head office" xml:space="preserve">
+    <value>ការិយាល័យ​ក​ណ្តា​ល</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ទំព័រដើម</value>
+  </data>
+  <data name="hours" xml:space="preserve">
+    <value>ម៉ោង</value>
+  </data>
+  <data name="In Stock" xml:space="preserve">
+    <value>មានក្នុង​ស្តុក</value>
+  </data>
+  <data name="Just now" xml:space="preserve">
+    <value>ឥឡូវនេះ</value>
+  </data>
+  <data name="Khmer" xml:space="preserve">
+    <value>ភាសាខ្មែរ</value>
+  </data>
+  <data name="Khmer Cultural Heritage" xml:space="preserve">
+    <value>គេហទំព័រមរតកវប្បធម៌ខ្មែរ</value>
+  </data>
+  <data name="Khmer Music Instruments" xml:space="preserve">
+    <value>ឧបករណ៍ភ្លេងខ្មែរ</value>
+  </data>
+  <data name="Khmer Tranditional" xml:space="preserve">
+    <value>ប្រពៃណីខ្មែរ</value>
+  </data>
+  <data name="Khmer Tranditional desc" xml:space="preserve">
+    <value>ទំនៀមទំលាប់ប្រពៃណីខ្មែរ សំដៅលើទំនៀមទំលាប់ និងទំនៀមទំលាប់ដែលបានអភិវឌ្ឍជាច្រើនសតវត្សមកហើយក្នុងចំណោមប្រជាជនខ្មែរនៃប្រទេសកម្ពុជា។ ទំនៀមទំលាប់ទាំងនេះត្រូវបានទទួលឥទ្ធិពលយ៉ាងខ្លាំងពីព្រះពុទ្ធសាសនា ក៏ដូចជាប្រវត្តិសាស្ត្រ និងភូមិសាស្ត្ររបស់ប្រទេស។ ទិដ្ឋភាពសំខាន់ៗមួយចំនួននៃទំនៀមទំលាប់ខ្មែរ រួមមានការកសាងប្រាសាទបុរាណដូចជាប្រាសាទអង្គរវត្ត របាំប្រពៃណី និងតន្ត្រី និងមុខម្ហូបប្លែកៗដែលមានរសជាតិដិត និងគ្រឿងផ្សំប្លែកៗ។ គ្រួសារ និងសហគមន៍មានតម្លៃខ្ពស់នៅក្នុងសង្គមខ្មែរ ហើយទំនៀមទម្លាប់ជាច្រើនត្រូវបានផ្តោតលើការរក្សាភាពសុខដុមរមនា និងតុល្យភាពក្នុងទំនាក់ទំនង។ សរុបមក ទំនៀមទំលាប់ខ្មែរ គឺជាការបង្ហាញដ៏រស់រវើក និងចម្រុះពណ៌នៃបេតិកភណ្ឌវប្បធម៌ដ៏សម្បូរបែបរបស់កម្ពុជា។</value>
+  </data>
+  <data name="km" xml:space="preserve">
+    <value>ភាសាខ្មែរ</value>
+  </data>
+  <data name="KnowUs" xml:space="preserve">
+    <value>ស្គាល់យើង</value>
+  </data>
+  <data name="Lakhon Khol" xml:space="preserve">
+    <value>ល្ខោនខោល</value>
+  </data>
+  <data name="Latest" xml:space="preserve">
+    <value>ក្រោយបំផុត</value>
+  </data>
+  <data name="Latest Blog" xml:space="preserve">
+    <value>អត្ថបទចុងក្រោយ</value>
+  </data>
+  <data name="LEAVE A MESSAGE" xml:space="preserve">
+    <value>ទុកសារមួយ</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>ផ្ទះលេខ 41 , ផ្លូវ P21 បុរីប៉េងហួត, ភ្នំពេញ</value>
+  </data>
+  <data name="Log In" xml:space="preserve">
+    <value>ចូលគណនី</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ចូលគណនី</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>ចាកចេញ</value>
+  </data>
+  <data name="Main Category" xml:space="preserve">
+    <value>ក្រុមចម្បង</value>
+  </data>
+  <data name="Make a review" xml:space="preserve">
+    <value>ធ្វើការវាយតម្លៃ</value>
+  </data>
+  <data name="minute" xml:space="preserve">
+    <value>នាទី</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>នាទី</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>ច្រើនទៀត</value>
+  </data>
+  <data name="No  blog available." xml:space="preserve">
+    <value>មិនមានអត្ថបទទេ។</value>
+  </data>
+  <data name="No latest blog available." xml:space="preserve">
+    <value>មិនមានអត្ថបទចុងក្រោយបង្អស់ទេ។</value>
+  </data>
+  <data name="Not In Stock" xml:space="preserve">
+    <value>មិនមានក្នុង​ស្តុក</value>
+  </data>
+  <data name="Overall Rating" xml:space="preserve">
+    <value>ការវាយតម្លៃរួម</value>
+  </data>
+  <data name="Please log in to submit a review." xml:space="preserve">
+    <value>សូមចូលគណនីដើម្បីបញ្ជូនការវាយតម្លៃ។</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>ផលិតផល</value>
+  </data>
+  <data name="Product Type" xml:space="preserve">
+    <value>ប្រភេទ​ផលិតផល</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>គណនី</value>
+  </data>
+  <data name="Rated" xml:space="preserve">
+    <value>វាយតម្លៃ</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>កម្រិតវាយតម្លៃ</value>
+  </data>
+  <data name="Read more" xml:space="preserve">
+    <value>អាន​បន្ថែម</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>ចុះឈ្មោះ</value>
+  </data>
+  <data name="Relate Product" xml:space="preserve">
+    <value>ផលិតផលដែលទាក់ទង</value>
+  </data>
+  <data name="RELIGION" xml:space="preserve">
+    <value>សាសនា</value>
+  </data>
+  <data name="Remove from Cart" xml:space="preserve">
+    <value>យកចេញពីកន្រ្តក</value>
+  </data>
+  <data name="Remove from Favorites" xml:space="preserve">
+    <value>ដកចេញពីចំណូលចិត្ត</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>ការវាយតម្លៃ</value>
+  </data>
+  <data name="Review Title" xml:space="preserve">
+    <value>ចំណងជើង</value>
+  </data>
+  <data name="reviews" xml:space="preserve">
+    <value>ការវាយតម្លៃ</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>តួនាទី</value>
+  </data>
+  <data name="Role and User" xml:space="preserve">
+    <value>តួនាទី និងអ្នកប្រើប្រាស់</value>
+  </data>
+  <data name="Role and User manage" xml:space="preserve">
+    <value>តួនាទី និងការគ្រប់គ្រងអ្នកប្រើប្រាស់</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>ស្វែងរកឈ្មោះផលិតផល</value>
+  </data>
+  <data name="Socail Activity" xml:space="preserve">
+    <value>សកម្មភាពសង្គម</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ស្ថានភាព</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Sub Category" xml:space="preserve">
+    <value>ក្រុមរង</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>ប្រធានបទ</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>ដាក់ស្នើ</value>
+  </data>
+  <data name="Submit Review" xml:space="preserve">
+    <value>បញ្ជូនការវាយតម្លៃ</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>ជោគជ័យ</value>
+  </data>
+  <data name="Successfully" xml:space="preserve">
+    <value>ផលិតផលត្រូវបានបញ្ចូលទៅក្នុងកន្រ្តក</value>
+  </data>
+  <data name="Successfully added to cart." xml:space="preserve">
+    <value>បានដាក់ចូលកន្រ្តកដោយជោគជ័យ</value>
+  </data>
+  <data name="Successfully removed from cart." xml:space="preserve">
+    <value>បានដកចេញកន្រ្តកដោយជោគជ័យ</value>
+  </data>
+  <data name="SuccessfullyRemove" xml:space="preserve">
+    <value>ផលិតផលត្រូវបានដកចេញពីក្នុងកន្រ្តក</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>ចូលទៅកាន់ទីតាំងភ្នាក់ងាររបស់យើង ឬទាក់ទងមកយើងនៅថ្ងៃនេះ</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>ចំនួន​តម្លៃសរុប</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>អ្នកប្រើប្រាស់</value>
+  </data>
+  <data name="UserRole" xml:space="preserve">
+    <value>តួនាទីរបស់អ្នកប្រើប្រាស់</value>
+  </data>
+  <data name="View more product" xml:space="preserve">
+    <value>មើលផលិតផលច្រើនទៀត</value>
+  </data>
+  <data name="We are Cultural of Khmer" xml:space="preserve">
+    <value>យើងជាវប្បធម៌ខ្មែរ</value>
+  </data>
+  <data name="We inspire khmer Dance for every events" xml:space="preserve">
+    <value>យើងបំផុសរបាំខ្មែរគ្រប់កម្មវិធី</value>
+  </data>
+  <data name="We joined the charity" xml:space="preserve">
+    <value>យើង​បាន​ចូលរួម​កម្មវិធី​សប្បុរសធម៌</value>
+  </data>
+  <data name="We over to hear from you" xml:space="preserve">
+    <value>យើងចង់ឮពីអ្នក</value>
+  </data>
+  <data name="Who we are" xml:space="preserve">
+    <value>យើង​ជា​នរណា</value>
+  </data>
+  <data name="Write a review" xml:space="preserve">
+    <value>សរសេរការវាយតម្លៃ</value>
+  </data>
+  <data name="your email" xml:space="preserve">
+    <value>អ៊ីមែល​របស់​អ្នក</value>
+  </data>
+  <data name="your message" xml:space="preserve">
+    <value>សារ​របស់​អ្នក</value>
+  </data>
+  <data name="your name" xml:space="preserve">
+    <value>ឈ្មោះ​របស់​អ្នក</value>
+  </data>
+  <data name="Your review has been submitted successfully." xml:space="preserve">
+    <value>ការវាយតម្លៃរបស់អ្នកត្រូវបានដាក់ជូនដោយជោគជ័យ។ រង់ចាំការយល់ព្រមពីអ្នកគ្រប់គ្រង</value>
+  </data>
+</root>

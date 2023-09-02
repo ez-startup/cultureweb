@@ -1,0 +1,188 @@
+﻿@using CultureWeb.Utility
+@using CultureWeb.Models;
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "About";
+}
+@{
+    //var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+    int count = 0;
+    List<Products> products = HttpContextAccessor.HttpContext.Session.Get<List<Products>>("products");
+    if (products == null)
+    {
+        products = new List<Products>();
+    }
+    count = products.Count();
+
+}
+
+<nav class="navbar navbar-expand-md bg-brown navbar-dark sticky-top  shadow-sm">
+    <div class="container-fluid text-start">
+        <div class="col-md-1 col-lg-2 px-2">
+            <a class="navbar-brand d-flex flex-column " href="#">
+                <img src="~/Images/M.png" class="logo" width="35px" class="shadow" alt="">
+                <img src="~/Images/morodok.png" width="35px" alt="">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" col-md-11 col-lg-10 collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item mx-2"><a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Dashboard">@localizer["Dashboard"]</a></li>
+                }
+
+                @if (User.IsInRole("SuperUser"))
+                {
+                    <li class="nav-item mx-2"><a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">@localizer["Super User Dashboard"]</a></li>
+                }
+                <li class="nav-item mx-2">
+                    <a class="nav-link " asp-area="Customer" asp-controller="Home" asp-action="Index">@localizer["Home"]</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link " asp-area="Customer" asp-controller="Home" asp-action="AllProduct">@localizer["Product"]</a>
+                </li>
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle " href="./Blog.cshtml" role="button" data-bs-toggle="dropdown">@localizer["Blog"]</a>
+                    <ul class="dropdown-menu bg-brown">
+                        <li><a asp-action="Last-Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link">@localizer["Latest Blog"]</a></li>
+                        @foreach (var item in ViewBag.SubBlogs)
+                        {
+                            <li>
+                                @if (CultureInfo.CurrentUICulture.Name == "en")
+                                {
+                                    <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link" asp-route-id="@item.Id">
+                                        @item.Name
+                                    </a>
+                                }
+                                else if (CultureInfo.CurrentUICulture.Name == "km")
+                                {
+                                    <a asp-action="Blog" asp-controller="Home" asp-area="Customer" class="dropdown-item-2  nav-link" asp-route-id="@item.Id">
+                                        @item.Name_kh
+                                    </a>
+                                }
+                            </li>
+
+                        }
+                    </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" asp-area="Customer" asp-controller="Home" asp-action="About">@localizer["About"]</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Contact">@localizer["Contact"]</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Cart" title="@localizer["Cart"]" >
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        (@count)
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a id="login" asp-area="Identity" asp-page="/Account/Login" class="nav-link" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (0)</a>
+                    }
+                    else
+                    {
+
+                        <a asp-area="Customer" asp-controller="Home" asp-action="FavoriteProduct" class="nav-link" title="@localizer["Favorite"]"><i class="fa fa-heart"></i> (@ViewBag.FavoriteProductCount)</a>
+
+                    }
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                    @{
+                        var culture = Context.Features.Get<IRequestCultureFeature>();
+                        var cultureList = locOptions.Value.SupportedUICultures.Select(x => new SelectListItem { Value = x.Name, Text = localizer.GetString(x.Name) }).ToList();
+                        var returnUrl = string.IsNullOrWhiteSpace(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
+                    }
+
+                    <form method="post" asp-area="Customer" asp-action="ChangeLanguage" asp-controller="Home" asp-route-returnUrl="@returnUrl">
+                        <a class="nav-link " href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-language fs-4"></i>
+                        </a>
+                        <ul class="dropdown-menu bg-brown shadow animated--grow-in drop-sm-right" aria-labelledby="userDropdown">
+                            <button class="dropdown-item-2 bg-brown border-none text-white" type="submit" name="culture" value="en">
+                                <img src="~/images/en.png" class="flag-icon " width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                @localizer["English"]
+                            </button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item-2 bg-brown border-none text-white" type="submit" name="culture" value="km">
+                                <img src="~/images/km.png" class="flag-icon" width="20px" height="15px" style="margin-right: 6px; color: white !important;" />
+                                @localizer["Khmer"]
+                            </button>
+                            <!-- Add more language options as needed -->
+                        </ul>
+                    </form>
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <partial name="_LoginPartial" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="col-12 d-flex justify-content-center align-items-center m-0 p-0">
+    <img src="~/images/bg/khnowus.jpg" alt="" width="100%" class="position-relative">
+    <h2 class="position-absolute text-white">#@localizer["KnowUs"]</h2>
+</div>
+<div class="col-12 p-3 bg-white">
+<div class="row ">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-3 bg-white">
+        <div class="text-center">
+            <img src="~/images/poster/company.webp" alt="" width="90%">
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-3 bg-white">
+        <div class="d-flex justify-content-center">
+                <h4 class="fw-bolder">@localizer["Who we are"]?</h4>
+        </div>
+            <div class="mb-0 bg-white">
+            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur aperiam maiores natus, fugit quod expedita quia sed, odio minus impedit voluptatum debitis sit. Ex ab et dolores quas repellat maiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui vero molestias aspernatur perspiciatis et fugit minima cupiditate natus iure, beatae laborum hic vitae dolorem debitis provident! Mollitia, perspiciatis fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius velit asperiores beatae voluptates voluptatibus doloremque ad. Atque reprehenderit tempore exercitationem quas ex sequi ratione. Nesciunt doloribus quod ipsum quisquam qui!</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-12 bg-white">
+<div class="bg-white">
+    <div class="col-12 px-4">
+        <h4 class="fw-bolder">@localizer["We are Cultural of Khmer"] </h4>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde non, ducimus sint quibusdam incidunt iure optio, repudiandae expedita saepe, sapiente quidem nulla exercitationem sit consequatur! Dolore praesentium in tempora? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, rem, quisquam cupiditate incidunt unde explicabo officia fugit velit exercitationem numquam, tenetur dolores quae quas minus commodi excepturi porro ab quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ad facilis unde. Similique odio molestiae iure adipisci consequatur delectus cum! Laudantium, eius! Quidem sit iure odit, doloribus totam voluptates maxime?</p>
+    </div>
+</div>
+</div>
+<div class="col-12 p-4  bg-white">
+<div class="bg-white row">
+    <div class="col-12 border-top ">
+            <h4 class="fw-bolder">@localizer["Socail Activity"]</h4>
+    </div>
+    <div class="col-12 pb-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 product">
+                <div class="card  rounded-3 my-3 ">
+                    <img src="~/images/poster/action.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-brown">@localizer["We inspire khmer Dance for every events"]</h5>
+                        <p class="card-text text-dark fs-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatum nobis, dolore libero maxime excepturi aspernatur laudantium sapiente, enim maiores magnam animi harum nulla tempore fugiat rerum ea quae! Voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 product">
+                <div class="card  rounded-3 my-3 ">
+                        <img src="~/images/charity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                            <h5 class="card-title text-brown">@localizer["We joined the charity"] </h5>
+                        <p class="card-text text-dark fs-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatum nobis, dolore libero maxime excepturi aspernatur laudantium sapiente, enim maiores magnam animi harum nulla tempore fugiat rerum ea quae! Voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

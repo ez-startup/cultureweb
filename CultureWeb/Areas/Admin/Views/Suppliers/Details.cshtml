@@ -1,0 +1,121 @@
+﻿@model CultureWeb.Models.Supplier
+@{
+    ViewData["Title"] = @localizer["Supplier Details"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Supplier List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Supplier Details"]</p>
+    </div>
+
+</div>
+
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12  ">
+        <div class="row pt-options  mb-3">
+            <div class="d-flex justify-content-end">
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark mx-3">@localizer["Edit"]</a>
+                <!-- Delete button for each item -->
+                <a class="btn btn-danger delete-btn"  asp-action="Delete" asp-route-id="@Model.Id">@localizer["Delete"]</a>
+
+            </div>
+        </div>
+        <div class="bg-white rounded-3 shadow-sm p-3">
+            <div class="d-flex justify-content-center h4 text-dark my-2">@localizer["Supplier Details"]</div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Supplier ID"] </label>
+                <span class=" text-black col-6 col-lg-9 col-md-8 ">@Html.DisplayFor(model => model.Id)</span>
+            </div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Supplier Name"] </label>
+                <span class=" text-black col-6 col-lg-9 col-md-8">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.SupplierName)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.SupplierName_kh)
+                    }
+                </span>
+            </div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Position"] </label>
+                <span class=" text-black col-6 col-lg-9 col-md-8">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.JobTitle)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.JobTitle_kh)
+                    }
+                </span>
+            </div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Company Name"]</label>
+                <span class=" text-black col-6 col-lg-9 col-md-8">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.CompanyName)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.CompanyName_kh)
+                    }
+                </span>
+            </div>
+             <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Contact Phone"]</label>
+                <span class=" text-black col-6 col-lg-9 col-md-8">
+                    @Html.DisplayFor(model => model.Phone)                
+                </span>
+            </div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Email"]</label>
+                <span class="col-6 col-lg-9 col-md-8">
+                    @Html.DisplayFor(model => model.Email)
+                </span>
+            </div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-6 col-lg-3 col-md-4" for="">@localizer["Country"]</label>
+                <span class=" text-black col-6 col-lg-9 col-md-8">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Country)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Country_kh)
+                    }
+                </span>
+            </div>
+            <div class="mt-2">
+                <label class="fw-bolder text-dark" for="">@localizer["Address"]</label>
+                <p class="text-black">
+                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                    {
+                        @Html.DisplayFor(model => model.Address)
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                    {
+                        @Html.DisplayFor(model => model.Address_kh)
+                    }
+                </p>
+            </div>
+            <div class="mt-2 row">
+                <label class="fw-bolder text-dark col-12 col-sm-6 col-lg-3 col-md-4" for="">@localizer["Website"]</label>
+                <span class=" col-12 col-sm-6 col-lg-9 col-md-8">                   
+                    @Html.DisplayFor(model => model.Website)                  
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

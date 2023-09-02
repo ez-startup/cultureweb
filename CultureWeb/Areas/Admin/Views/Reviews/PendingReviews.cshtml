@@ -1,0 +1,111 @@
+﻿@using CultureWeb.Models;
+@model IEnumerable<Review>
+@{
+    ViewData["Title"] = @localizer["Pending Reviews"];
+}
+
+<h1 class="h5 mb-0 text-danger mb-4">@localizer["Pending Reviews"]</h1>
+
+
+@if (Model.Any())
+{
+    <table class="table table-responsive-sm">
+        <thead>
+            <tr>
+                <th>@localizer["Review Title"]</th>
+                <th>@localizer["Rating"]</th>
+                <th>@localizer["Product"]</th>
+                <th>@localizer["Submitted By"]</th>
+                <th>@localizer["Action"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var review in Model)
+            {
+                <tr>
+                    <td>@review.ReviewTitle</td>
+                    <td>
+                        @for (int i = 0; i < review.Rating; i++)
+                        {
+                            <i class='fas fa-star text-danger'></i>
+                        }
+                    </td>                  
+                    <td>
+                        @if (CultureInfo.CurrentUICulture.Name == "en")
+                        {
+                            @review.Product.Name
+                        }
+                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                        {
+                            @review.Product.Name_kh
+                        }
+                    </td>
+                    <td>@review.User.UserName</td>
+                    <td class="d-flex">
+                        <form method="post" asp-controller="Reviews" asp-action="ApproveReview">
+                            <input type="hidden" name="reviewId" value="@review.Id" />
+                            <button type="submit" class="btn btn-sm btn-success">@localizer["Approve"]</button>
+                        </form>
+                        <form method="post" asp-action="RejectReview">
+                            <input type="hidden" name="reviewId" value="@review.Id" />
+                            <button type="submit" class="btn btn-sm btn-danger mx-2">@localizer["Reject"]</button>
+                        </form>
+                        <a asp-action="Details" asp-route-id="@review.Id" class="btn btn-sm btn-brown">@localizer["Details"]</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <table class="table table-responsive-sm">
+        <thead>
+            <tr>
+               <th>@localizer["Review Title"]</th>
+                <th>@localizer["Rating"]</th>
+                <th>@localizer["Product"]</th>
+                <th>@localizer["Submitted By"]</th>
+                <th>@localizer["Action"]</th>
+            </tr>
+        </thead>
+        <tbody>          
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>@localizer["No pending reviews."]</td>
+                    <td></td>
+                    <td>                     
+                    </td>
+                </tr>          
+        </tbody>
+    </table>
+}
+
+<div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="statusModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="status modal-content ">
+            <div class="modal-body d-flex pt-4 align-middle">
+                <div class="mx-2 align-middle">
+                    <i class="fas fa-check-circle fs-3 p-3 bg-success rounded-circle text-white"></i>
+                </div>
+                 <div class="px-4 align-middle text-success">
+                    <span class="fw-bold">@localizer["Successfully"]!</span>
+                    <p class="fs-6">@((TempData["StatusMessage"]?.ToString() != null) ? localizer[TempData["StatusMessage"].ToString()] : "")</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (TempData["StatusMessage"] != null)
+{
+            <script>
+                $(document).ready(function () {
+                    $('#statusModal').modal('show');
+                    setTimeout(function () {
+                        $('#statusModal').modal('hide');
+                    }, 4000); // Change the value to the desired number of milliseconds (e.g., 3000 for 3 seconds)
+                });
+            </script>
+}

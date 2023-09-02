@@ -1,0 +1,98 @@
+﻿@model CultureWeb.Models.Blog
+@{
+    ViewData["Title"] = @localizer["Blog Details"];
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Blog List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Blog Details"]</p>
+    </div>
+
+</div>
+
+<div class="row pt-options mb-3">
+    <div class="d-flex justify-content-end">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-dark mx-2">@localizer["Edit"]</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">@localizer["Delete"]</a>
+    </div>
+</div>
+<!-- Content Row -->
+<div class="row">
+    <div class="col-12  bg-white rounded-3 shadow-sm p-3">
+        <div class="row ">
+            <div class="col-12 p-5 bg-white">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="mt-1">
+                                <h4 class="fw-bolder my-2"> 
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(model => model.Title)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(model => model.Title_kh)
+                                    }
+                                </h4>
+                                <p>
+                                     @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(model => model.Description)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(model => model.Description_kh)
+                                    }
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">                                             
+                            <div class="col-12 col-lg-10 col-md-8">
+                                <h6 class="fw-bolder">
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(model => model.BlogTitle)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(model => model.BlogTitle_kh)
+                                    }
+                                   
+                                </h6>
+                                <div>
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(model => model.BlogDesc)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(model => model.BlogDesc_kh)
+                                    }
+                                                                       
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2 col-md-4">
+                                <img src="~/@Model.Image" asp-append-version="true" alt="poster" width="100%" class="col-xs-12 rounded-2">
+                                <span class="fw-bolder text-secondary my-1">
+                                    @if (CultureInfo.CurrentUICulture.Name == "en")
+                                    {
+                                        @Html.DisplayFor(model => model.Title)
+                                    }
+                                    else if (CultureInfo.CurrentUICulture.Name == "km")
+                                    {
+                                        @Html.DisplayFor(model => model.Title_kh)
+                                    }
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

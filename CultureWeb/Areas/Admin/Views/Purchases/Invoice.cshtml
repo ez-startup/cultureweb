@@ -1,0 +1,198 @@
+﻿@model CultureWeb.Models.Purchase
+@{
+    ViewData["Title"] = @localizer["invoice"];
+    Layout = "~/Pages/Shared/_InvoiceLayout.cshtml";
+}
+<div class="container ">
+    <div class="my-3">
+        <div class="row">
+            <div class="col-12 my-3 d-flex justify-content-between">
+                <div>
+                    <a class="btn btn-danger d-none-print" asp-action="Details" asp-route-id="@Model.Id">@localizer["Back"]</a>
+                </div>
+                <div>
+
+                    <button class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm d-none-print" onclick="print()">
+                        <i class="fas fa-download fa-sm text-white-50"></i> @localizer["Generate Report"]
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 mb-5 ">
+                <div class=" pb-5 pt-0">
+                    <div class="">
+
+                        <div class="row">
+                            <div class="col-12​​ d-flex my-2">
+                                <div class="col-3​">
+                                    <div class="d-flex flex-column align-items-center text-center mx-5 ">
+                                        <div class="upload rounded-circle ">
+                                            <img src="~/Images/LOGO1.png" width=70 height=70 alt="Profile" class="rounded-circle object-fit">
+
+                                        </div>
+                                        <span class="fw-bold mt-3 text-black fs-5">@localizer["Co"]</span>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center mb-2 mt-4">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="fw-bold fs-4 text-black">@localizer["invoice"]</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" d-flex  justify-content-between  pt-4 mx-3">
+                                <div class=" d-flex flex-column">
+                                    <span class="fs-7 "> @localizer["Address"]</span>
+                                    <span class="fs-7 "> @localizer["Phnom Penh"]</span>
+                                    <span class="fs-7 "> @localizer["Cambodia"]</span>
+                                    <span class="fs-7 "> @localizer["Phone"] : +855 77 332 977, +855 15 999 010</span>
+                                    @*<span class="fs-7 "> Chhinlongchheun4@gmail.com</span>*@
+
+                                </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <span class="fs-7 fw-bolder"> @localizer["Purchase From"] :</span>
+                                    <span class="fs-7 ">
+                                        @localizer["Supplier"] : @if (CultureInfo.CurrentUICulture.Name == "en")
+                                        {
+                                            @Html.DisplayFor(model => model.Suppliers.SupplierName)
+                                        }
+                                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                                        {
+                                            @Html.DisplayFor(model => model.Suppliers.SupplierName_kh)
+                                        }
+                                    </span>  
+                                    <span class="fs-7 ">
+                                        @localizer["Company"] : 
+                                        @if (CultureInfo.CurrentUICulture.Name == "en")
+                                        {
+                                            @Html.DisplayFor(model => model.Suppliers.CompanyName)
+                                        }
+                                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                                        {
+                                            @Html.DisplayFor(model => model.Suppliers.CompanyName_kh)
+                                        }
+                                    </span>
+                                    <span class="fs-7 "> @localizer["Phone"] : @Html.DisplayFor(model => model.Suppliers.Phone)</span>
+                                    <span class="fs-7 ">                                   
+                                        @if (CultureInfo.CurrentUICulture.Name == "en")
+                                        {
+                                            @Html.DisplayFor(model => model.Suppliers.Address)
+                                        }
+                                        else if (CultureInfo.CurrentUICulture.Name == "km")
+                                        {
+                                            @Html.DisplayFor(model => model.Suppliers.Address_kh)
+                                        }​
+                                        ​ ( 
+                                            @if (CultureInfo.CurrentUICulture.Name == "en")
+                                            {
+                                                @Html.DisplayFor(model => model.Suppliers.Country)
+                                            }
+                                            else if (CultureInfo.CurrentUICulture.Name == "km")
+                                            {
+                                                @Html.DisplayFor(model => model.Suppliers.Country_kh)
+                                            }​
+                                         )
+                                    </span>
+                                    <span class="fs-7 text-decoration-none"> @Html.DisplayFor(model => model.Suppliers.Email)</span>
+
+                                </div>
+                                <div class=" d-flex flex-column mx-3">
+                                    <span class="fs-7 fw-bolder"> @localizer["Purchase No"] : #@Html.DisplayFor(model => model.PurchaseNo)</span>
+                                    <span class="fs-7 "> @localizer["Date"] : @Html.DisplayFor(model => model.PurchaseDate)</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="" style="padding-left:1rem;">
+                        <table class="w-100 border-2 border-dark align-middle my-3 bg-white rounded-3  ">
+                            <thead class=" text-center bg-dark border-2">
+
+                                <tr class="text-white border-dark ">
+                                    <th class="fs-7 py-2">@localizer["No"]</th>
+                                    <th class="fs-7 py-2">@localizer["Product Name"]</th>
+                                    <th class="fs-7 py-2">@localizer["Cost Price"]</th>
+                                    <th class="fs-7 py-2">@localizer["Quantity"]</th>
+                                    <th class="fs-7 py-2">@localizer["Total Price"]</th>
+                                    <th class="fs-7 py-2">@localizer["Other"]</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center p-3">
+                                @foreach (var (index, item) in Model.PurchaseDetails.Select((value, i) => (i, value)))
+                                {
+                                    <tr class="bg-white border-2 border-bottom">
+                                        <td>
+                                            <span>@(index + 1)</span>
+                                        </td>
+                                        <td class="py-2">
+                                            <span class="fs-7">                                               
+                                                @switch (CultureInfo.CurrentUICulture.Name)
+                                                {
+                                                    case "en":
+                                                        @($"{item.Product.Name}")
+                                                        break;
+                                                    case "km":
+                                                        @($"{item.Product.Name_kh}")
+                                                        break;
+                                                    default:
+                                                        @($"{item.Product.Name}")
+                                                        break;
+                                                }
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <span class="fs-7"><i class="mx-1 fw-bold">$</i>@item.CostPrice</span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-7"><i class="mx-1 fw-bold"></i>@item.QtyPurchase</span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-7 py-3"><i class="mx-1 fw-bold">$</i>@(item.CostPrice * item.QtyPurchase)</span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-7"><i class="mx-1 fw-bold"></i></span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+
+                        </table>
+                        <div class="text-end border-0 d-flex justify-content-end mb-5">
+                            <div class="p-2  border-1 bg-gray-200">
+                                <div class="fs-7" colspan="3">
+                                    <span class="fs-6"><i class="mx-5 fw-bold">@localizer["Sub Total"] </i>$@Model.PurchaseDetails.Sum(c=>c.CostPrice*c.QtyPurchase)</span>
+                                </div>
+                                <div class="fs-7" colspan="3">
+                                    <span class="fs-6"><i class="mx-5 fw-bold">@localizer["Inline Discount"] </i>$0,00</span>
+                                </div>
+                                <div class="fs-7" colspan="3">
+                                    <span class="fs-6"><i class="mx-5 fw-bold"> @localizer["Total"] </i>$@Model.PurchaseDetails.Sum(c=>c.CostPrice*c.QtyPurchase)</span>
+                                </div>
+                                <div class="fs-7" colspan="3">
+                                    <span class="fs-6 fw-bold"><i class="mx-5 fw-bold">@localizer["Amount Due"] </i>$@Model.PurchaseDetails.Sum(c=>c.CostPrice*c.QtyPurchase)</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-end mb-5 mx-5">
+
+                        <div class="d-flex flex-column align-items-center mb-5">
+
+                            @*<span class="text-dark fw-bolder" >Chhinlong</span>*@
+                            <span class="text-dark fw-bolder " style="margin-top: 120px;">@localizer["Trading"]</span>
+                            <span>@localizer["Sale Supervisor"]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

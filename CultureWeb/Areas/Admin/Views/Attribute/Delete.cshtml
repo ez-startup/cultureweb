@@ -1,0 +1,70 @@
+﻿@model CultureWeb.Models.Attribute
+@{
+    ViewData["Title"] = @localizer["Attribute Delete"];
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="pt-title ">
+        <p class="fs-6"><a asp-action="Index" class="fs-5 text-danger">@localizer["Attribute List"]</a> <i class="fa-solid fa-chevron-right"></i> @localizer["Attribute Delete"]</p>
+    </div>
+</div>
+
+<form asp-action="Delete" method="post">
+    <div class="p-4 rounded border">
+        <input type="hidden" asp-for="Id" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Name">@localizer["Attribute Name"] : </label>
+            </div>
+            <div class="col-5 fw-bolder">
+                 @if (CultureInfo.CurrentUICulture.Name == "en")
+                 {
+                    @Html.DisplayFor(model => model.Name)
+                 }
+                else if (CultureInfo.CurrentUICulture.Name == "km")
+                {
+                    @Html.DisplayFor(model => model.Name_kh)
+                }
+            </div>
+            <div class="col-4">
+                <a asp-action="Index" class="btn btn-dark">@localizer["Cancel"]</a>
+                <input type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteConfirmationModal" value="@localizer["Delete"]" />
+            </div>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+</form>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteConfirmationModalLabel">@localizer["Confirm Deletion"]</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>@localizer["question"]</p>
+            </div>
+            <div class="modal-footer">
+                <form asp-action="Delete" method="post">               
+                    <input type="hidden" asp-for="Id" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>                                     
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">@localizer["Cancel"]</button>
+                    <button type="submit" class="btn btn-dark">@localizer["Yes"]</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
