@@ -3604,3 +3604,4 @@ D:\Git Ez Startup\cultureweb\obj\Debug\net7.0\scopedcss\projectbundle\CultureWeb
 D:\Git Ez Startup\cultureweb\obj\Debug\net7.0\CultureWeb.csproj.CopyComplete
 D:\Git Ez Startup\cultureweb\obj\Debug\net7.0\CultureWeb.genruntimeconfig.cache
 D:\Git Ez Startup\cultureweb\obj\Debug\net7.0\ref\CultureWeb.dll
+D:\Git Ez Startup\cultureweb\bin\Debug\net7.0\appsettings.Production.json
