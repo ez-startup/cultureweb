@@ -1,0 +1,25 @@
+# The name of your project
+name: my-dotnet7-app
+
+# Specify the environment you want to use (e.g., production, staging)
+env: production
+
+# Services define how your application runs.
+services:
+  - name: web
+    type: web
+    env: 
+      # Add environment variables specific to your application here
+      DOTNET_ROOT: /usr/share/dotnet
+      DOTNET_CLI_TELEMETRY_OPTOUT: 1
+      ASPNETCORE_ENVIRONMENT: Production
+    buildCommand: dotnet publish -c Release -o out
+    startCommand: ./out/CultureWeb
+
+# The version of Nixpacks to use
+version: 2
+
+# Build settings
+build:
+  frontend: yarn install --frozen-lockfile
+  nix: nix-shell --command "yarn install --frozen-lockfile"
