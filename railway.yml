@@ -1,5 +1,5 @@
 # The name of your project
-name: my-dotnet7-app
+name: cultureweb-app
 
 # Specify the environment you want to use (e.g., production, staging)
 env: production
