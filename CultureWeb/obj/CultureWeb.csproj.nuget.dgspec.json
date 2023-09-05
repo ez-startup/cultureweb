@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git BBU-Group_Work\\CultureWeb\\CultureWeb\\CultureWeb\\CultureWeb.csproj": {}
+    "D:\\Git Ez Startup\\cultureweb\\CultureWeb\\CultureWeb.csproj": {}
   },
   "projects": {
-    "D:\\Git BBU-Group_Work\\CultureWeb\\CultureWeb\\CultureWeb\\CultureWeb.csproj": {
+    "D:\\Git Ez Startup\\cultureweb\\CultureWeb\\CultureWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git BBU-Group_Work\\CultureWeb\\CultureWeb\\CultureWeb\\CultureWeb.csproj",
+        "projectUniqueName": "D:\\Git Ez Startup\\cultureweb\\CultureWeb\\CultureWeb.csproj",
         "projectName": "CultureWeb",
-        "projectPath": "D:\\Git BBU-Group_Work\\CultureWeb\\CultureWeb\\CultureWeb\\CultureWeb.csproj",
+        "projectPath": "D:\\Git Ez Startup\\cultureweb\\CultureWeb\\CultureWeb.csproj",
         "packagesPath": "C:\\Users\\CKP2\\.nuget\\packages\\",
-        "outputPath": "D:\\Git BBU-Group_Work\\CultureWeb\\CultureWeb\\CultureWeb\\obj\\",
+        "outputPath": "D:\\Git Ez Startup\\cultureweb\\CultureWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CKP2\\AppData\\Roaming\\NuGet\\NuGet.Config",
