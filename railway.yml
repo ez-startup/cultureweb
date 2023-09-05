@@ -14,8 +14,8 @@ services:
       DOTNET_CLI_TELEMETRY_OPTOUT: 1
       ASPNETCORE_ENVIRONMENT: Production
     # Set the build command to use the correct .NET 7.0 SDK version
-    buildCommand: dotnet publish -c Release -o out /p:TargetFramework=net7.0
-    startCommand: ./out/Program
+    buildCommand: dotnet restore && dotnet publish --no-restore -c Release -o {}
+    startCommand: ./out
 
 # The version of Nixpacks to use
 version: 2
