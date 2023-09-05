@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using System.Configuration;
 using CultureWeb.Models;
 using CultureWeb.Services;
+using CultureWeb.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -75,6 +76,9 @@ var app = builder.Build();
 
 var requestLocalizationOptions = app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 app.UseRequestLocalization(requestLocalizationOptions);
+
+var scope = app.Services.CreateScope();
+await DataHelper.ManageDataAsync(scope.ServiceProvider);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

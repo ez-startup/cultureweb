@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6CFN3BexeSZfplAcPhu3zIWOADYl6CbwTDfXmosjDXyk8PT1/SR2g4Bo9vzXB3UFPfeSJHnu0XUW2m2FSe/S4Q==",
+  "dgSpecHash": "yz2b/VfQrZxFGAGhD07yNoHnTvUWBDYbDwtnvkroAJ5BXMsWL614MqMytx3K5f1hMO/xuPBMdEBlwAvyJE0i4A==",
   "success": true,
   "projectFilePath": "D:\\Git Ez Startup\\cultureweb\\CultureWeb\\CultureWeb.csproj",
   "expectedPackageFiles": [
@@ -139,6 +139,7 @@
     "C:\\Users\\CKP2\\.nuget\\packages\\netcore.mailkit\\2.1.0\\netcore.mailkit.2.1.0.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\CKP2\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\nuget.common\\6.6.1\\nuget.common.6.6.1.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\nuget.configuration\\6.6.1\\nuget.configuration.6.6.1.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\nuget.dependencyresolver.core\\6.6.1\\nuget.dependencyresolver.core.6.6.1.nupkg.sha512",
