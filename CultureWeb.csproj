@@ -1,13 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
+   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-mobileshop-7a39096c-2c82-402d-aadc-9a1b13878042</UserSecretsId>
-	<BaseOutputPath>bin</BaseOutputPath>
-	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <BaseOutputPath>bin</BaseOutputPath>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MessagePackAnalyzer" Version="2.6.100-alpha" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\**" />
