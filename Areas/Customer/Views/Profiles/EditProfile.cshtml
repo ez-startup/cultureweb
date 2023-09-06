@@ -231,17 +231,17 @@
                                 <input asp-for="FirstName" class="form-control col-12 col-lg-6 col-md-6 mb-2" data-val-required="@localizer["First Name is required."]" placeholder="@localizer["First Name"]" />
                                 <input asp-for="LastName" class="form-control col-12 col-lg-6 col-md-6 mb-2" data-val-required="@localizer["Last Name is required."]" placeholder="@localizer["Last Name"]" />                               
                                 <select asp-for="Gender" class="form-select mb-2" aria-label="Default select example">
-                                    <option selected readonly>Select Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
+                                    <option selected readonly>@localizer["Select Gender"]</option>
+                                    <option value="Male">@localizer["Male"]</option>
+                                    <option value="Female">@localizer["Female"]</option>
+                                    <option value="Other">@localizer["Other"]</option>
                                 </select>
                                 <input asp-for="Phone" type="number" class="form-control col-12 mb-2"   placeholder="@localizer["Phone number"]"/>
                                 <textarea asp-for="Address" cols="20" rows="5" class="form-control mb-2" placeholder="@localizer["Address"]"></textarea>
                                 <input asp-for="BirthDate" type="date" class="form-control col-12 mb-4" placeholder="@localizer["Birth Of Date"]" />
                                 
-                                <a class="btn btn-dark mb-2" asp-area="Identity" asp-page="/Account/Manage/Email">Change Email</a>
-                                <a class="btn btn-dark" asp-area="Identity" asp-page="/Account/Manage/ChangePassword">Change Password</a>
+                                <a class="btn btn-dark mb-2" asp-area="Identity" asp-page="/Account/Manage/Email">@localizer["Change Email"]</a>
+                                <a class="btn btn-dark" asp-area="Identity" asp-page="/Account/Manage/ChangePassword">@localizer["Change Password"]</a>
                             </span>
                         </div>
                        

@@ -1,5 +1,4 @@
-﻿using Azure.Identity;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace CultureWeb.Models
 {

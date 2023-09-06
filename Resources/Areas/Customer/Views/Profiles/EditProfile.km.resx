@@ -123,6 +123,9 @@
   <data name="Add to Cart" xml:space="preserve">
     <value>ដាក់ចូលកន្រក</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>អាស័យដ្ឋាន</value>
+  </data>
   <data name="All Products" xml:space="preserve">
     <value>ផលិតផលទាំងអស់</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="Attribute" xml:space="preserve">
     <value>ធាតុផ្គុំ</value>
+  </data>
+  <data name="Birth Of Date" xml:space="preserve">
+    <value>ថ្ងៃខែឆ្នាំកំណើត</value>
   </data>
   <data name="Blog" xml:space="preserve">
     <value>អត្ថបទ</value>
@@ -147,8 +153,17 @@
   <data name="Cart" xml:space="preserve">
     <value>កន្រ្តក</value>
   </data>
+  <data name="Cart1" xml:space="preserve">
+    <value>កន្រ្តក</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>ក្រុម</value>
+  </data>
+  <data name="Change Email" xml:space="preserve">
+    <value>ផ្លាស់ប្តូរអ៊ីមែល</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>ផ្លាស់ប្តូរពាក្យសម្ងាត់</value>
   </data>
   <data name="Checkout" xml:space="preserve">
     <value>ពិនិត្យចេញ</value>
@@ -180,7 +195,13 @@
   <data name="en" xml:space="preserve">
     <value>អង់គ្លេស</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>អង់គ្លេស</value>
+  </data>
   <data name="Favorite" xml:space="preserve">
+    <value>ចំណូលចិត្ត</value>
+  </data>
+  <data name="Favorite1" xml:space="preserve">
     <value>ចំណូលចិត្ត</value>
   </data>
   <data name="FavoriteAdd" xml:space="preserve">
@@ -189,11 +210,17 @@
   <data name="FavoriteRemove" xml:space="preserve">
     <value>ផលិតផលត្រូវបានដកចេញពីចំណូលចិត្ត</value>
   </data>
+  <data name="Female" xml:space="preserve">
+    <value>ស្រី</value>
+  </data>
   <data name="Filter by Category" xml:space="preserve">
     <value>ស្វែងរកតាមក្រុម</value>
   </data>
   <data name="First Name" xml:space="preserve">
     <value>នាមខ្លួន</value>
+  </data>
+  <data name="First Name is required." xml:space="preserve">
+    <value>ឈ្មោះដំបូងគឺចាំបាច់</value>
   </data>
   <data name="Gallery" xml:space="preserve">
     <value>វិចិត្រសាល</value>
@@ -203,6 +230,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>ទំព័រដើម</value>
+  </data>
+  <data name="Khmer" xml:space="preserve">
+    <value>ភាសាខ្មែរ</value>
   </data>
   <data name="Khmer Cultural Heritage" xml:space="preserve">
     <value>គេហទំព័រមរតកវប្បធម៌ខ្មែរ</value>
@@ -228,6 +258,9 @@
   <data name="Last Name" xml:space="preserve">
     <value>នាមត្រកូល</value>
   </data>
+  <data name="Last Name is required." xml:space="preserve">
+    <value>នាមត្រកូលត្រូវបានទាមទារ</value>
+  </data>
   <data name="Latest" xml:space="preserve">
     <value>ក្រោយបំផុត</value>
   </data>
@@ -249,6 +282,9 @@
   <data name="Main Category" xml:space="preserve">
     <value>ក្រុមចម្បង</value>
   </data>
+  <data name="Male" xml:space="preserve">
+    <value>ប្រុស</value>
+  </data>
   <data name="More" xml:space="preserve">
     <value>ច្រើនទៀត</value>
   </data>
@@ -266,6 +302,12 @@
   </data>
   <data name="No Products in favorite list" xml:space="preserve">
     <value>មិនមានផលិតផលក្នុងបញ្ជីចំណូលចិត្ត</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>ផ្សេងទៀត</value>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>លេខទូរស័ព្ទ</value>
   </data>
   <data name="Price" xml:space="preserve">
     <value>តម្លៃ</value>
@@ -314,6 +356,9 @@
   </data>
   <data name="Search" xml:space="preserve">
     <value>ស្វែងរកឈ្មោះផលិតផល</value>
+  </data>
+  <data name="Select Gender" xml:space="preserve">
+    <value>ជ្រើសរើស​ភេទ</value>
   </data>
   <data name="Socail Activity" xml:space="preserve">
     <value>សកម្មភាពសង្គម</value>

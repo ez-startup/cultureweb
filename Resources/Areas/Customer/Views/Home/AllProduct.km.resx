@@ -135,6 +135,9 @@
   <data name="Blog" xml:space="preserve">
     <value>អត្ថបទ</value>
   </data>
+  <data name="Cart" xml:space="preserve">
+    <value>កន្រ្តក</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>ក្រុម</value>
   </data>
@@ -153,6 +156,12 @@
   <data name="en" xml:space="preserve">
     <value>អង់គ្លេស</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>អង់គ្លេស</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>ចំណូលចិត្ត</value>
+  </data>
   <data name="FavoriteAdd" xml:space="preserve">
     <value>ផលិតផលត្រូវបានបញ្ចូលទៅក្នុងចំណូលចិត្ត</value>
   </data>
@@ -164,6 +173,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>ទំព័រដើម</value>
+  </data>
+  <data name="Khmer" xml:space="preserve">
+    <value>ភាសាខ្មែរ</value>
   </data>
   <data name="Khmer Cultural Heritage" xml:space="preserve">
     <value>គេហទំព័រមរតកវប្បធម៌ខ្មែរ</value>

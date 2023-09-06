@@ -147,6 +147,9 @@
   <data name="Cart List" xml:space="preserve">
     <value>បញ្ជីកន្រ្តក</value>
   </data>
+  <data name="Cart1" xml:space="preserve">
+    <value>កន្រ្តក</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>ក្រុម</value>
   </data>
@@ -177,7 +180,13 @@
   <data name="en" xml:space="preserve">
     <value>អង់គ្លេស</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>អង់គ្លេស</value>
+  </data>
   <data name="Favorite" xml:space="preserve">
+    <value>ចំណូលចិត្ត</value>
+  </data>
+  <data name="Favorite1" xml:space="preserve">
     <value>ចំណូលចិត្ត</value>
   </data>
   <data name="Filter by Category" xml:space="preserve">
@@ -194,6 +203,9 @@
   </data>
   <data name="Invalid quantity selected." xml:space="preserve">
     <value>ស្តុកមានចំនួនកំណត់</value>
+  </data>
+  <data name="Khmer" xml:space="preserve">
+    <value>ភាសាខ្មែរ</value>
   </data>
   <data name="Khmer Cultural Heritage" xml:space="preserve">
     <value>គេហទំព័រមរតកវប្បធម៌ខ្មែរ</value>

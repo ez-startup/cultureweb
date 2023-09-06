@@ -162,17 +162,13 @@ namespace CultureWeb.Areas.Customer.Controllers
             // Update the user's profile properties
             user.FirstName = model.FirstName;
             user.LastName = model.LastName;
-            user.UserName = model.UserName;
             user.Image = model.Image;
             user.Gender = model.Gender;
             user.Phone = model.Phone;
             user.Address = model.Address;
             user.BirthDate = model.BirthDate;
 
-
-
             // Update other properties as needed
-
             // Save the changes to the user's profile
             var result = _userManager.UpdateAsync(user).Result;
 
