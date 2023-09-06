@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OH1xevEDWyKRjPWE9lY7kD/nvPb6K3fZxIzDq5BjJYY5yR6EgxSgypi8rcH3Dvd/bOdu9dHsP0RjYE6NCt1iPg==",
+  "dgSpecHash": "rpug4eTdHLsjooiCGBBu8tqiwp8BN8aBFVx2jHxstrIFRAsRvOihs4tI5urFm0vo8VtLLt5tUmCmf6BNlIJTuQ==",
   "success": true,
   "projectFilePath": "D:\\Git Ez Startup\\cultureweb\\CultureWeb.csproj",
   "expectedPackageFiles": [
@@ -64,7 +64,7 @@
     "C:\\Users\\CKP2\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
-    "C:\\Users\\CKP2\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\CKP2\\.nuget\\packages\\messagepackanalyzer\\2.6.100-alpha\\messagepackanalyzer.2.6.100-alpha.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.21\\microsoft.aspnetcore.cryptography.internal.6.0.21.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.21\\microsoft.aspnetcore.cryptography.keyderivation.6.0.21.nupkg.sha512",
     "C:\\Users\\CKP2\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.21\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.21.nupkg.sha512",
