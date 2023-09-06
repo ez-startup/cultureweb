@@ -1,26 +1,24 @@
-# The name of your project
-name: cultureweb-app
+name: Khmer Cultural Heritage App
+on:
+  branch: main
 
-# Specify the environment you want to use (e.g., production, staging)
-env: production
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-# Services define how your application runs.
-services:
-  - name: web
-    type: web
-    env:
-      # Add environment variables specific to your application here
-      DOTNET_ROOT: /usr/share/dotnet
-      DOTNET_CLI_TELEMETRY_OPTOUT: 1
-      ASPNETCORE_ENVIRONMENT: Production
-    # Set the build command to use the correct .NET 7.0 SDK version
-    buildCommand: dotnet restore && dotnet publish --no-restore -c Release -o {}
-    startCommand: ./out
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-# The version of Nixpacks to use
-version: 2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.x  # Use the desired .NET version
 
-# Build settings
-build:
-  frontend: yarn install --frozen-lockfile
-  nix: nix-shell --command "yarn install --frozen-lockfile"
+    - name: Build and Publish
+      run: dotnet publish -c Release -o out  # This assumes your project file is in the correct directory
+
+    - name: Deploy to Railway
+      uses: railwayapp/deploy@v2
+      with:
+        command: cp -r out $RAILWAY_BUILD_OUTPUT
